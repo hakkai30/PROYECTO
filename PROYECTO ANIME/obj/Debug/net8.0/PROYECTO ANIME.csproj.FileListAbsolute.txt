@@ -1,0 +1,34 @@
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/bin/Debug/net8.0/appsettings.Development.json
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/bin/Debug/net8.0/appsettings.json
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/bin/Debug/net8.0/PROYECTO ANIME.staticwebassets.runtime.json
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/bin/Debug/net8.0/PROYECTO ANIME
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/bin/Debug/net8.0/PROYECTO ANIME.deps.json
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/bin/Debug/net8.0/PROYECTO ANIME.runtimeconfig.json
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/bin/Debug/net8.0/PROYECTO ANIME.dll
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/bin/Debug/net8.0/PROYECTO ANIME.pdb
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/PROYECTO ANIME.csproj.AssemblyReference.cache
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/PROYECTO ANIME.GeneratedMSBuildEditorConfig.editorconfig
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/PROYECTO ANIME.AssemblyInfoInputs.cache
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/PROYECTO ANIME.AssemblyInfo.cs
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/PROYECTO ANIME.csproj.CoreCompileInputs.cache
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/PROYECTO ANIME.MvcApplicationPartsAssemblyInfo.cache
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/PROYECTO ANIME.RazorAssemblyInfo.cache
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/PROYECTO ANIME.RazorAssemblyInfo.cs
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/PROYECTO ANIME.sourcelink.json
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/staticwebassets.build.json
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/staticwebassets.development.json
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/staticwebassets/msbuild.PROYECTO ANIME.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/staticwebassets/msbuild.build.PROYECTO ANIME.props
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.PROYECTO ANIME.props
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.PROYECTO ANIME.props
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/staticwebassets.pack.json
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/scopedcss/bundle/PROYECTO ANIME.styles.css
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/scopedcss/projectbundle/PROYECTO ANIME.bundle.scp.css
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/PROYECTO.DD5A7323.Up2Date
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/PROYECTO ANIME.dll
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/refint/PROYECTO ANIME.dll
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/PROYECTO ANIME.pdb
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/PROYECTO ANIME.genruntimeconfig.cache
+/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/ref/PROYECTO ANIME.dll
