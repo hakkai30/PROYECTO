@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Documents\\ENTORNS-PaginaWeb\\PROYECTO\\PROYECTO ANIME\\PROYECTO ANIME.csproj": {}
+    "/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/PROYECTO ANIME.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Documents\\ENTORNS-PaginaWeb\\PROYECTO\\PROYECTO ANIME\\PROYECTO ANIME.csproj": {
+    "/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/PROYECTO ANIME.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\ENTORNS-PaginaWeb\\PROYECTO\\PROYECTO ANIME\\PROYECTO ANIME.csproj",
+        "projectUniqueName": "/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/PROYECTO ANIME.csproj",
         "projectName": "PROYECTO ANIME",
-        "projectPath": "C:\\Users\\User\\Documents\\ENTORNS-PaginaWeb\\PROYECTO\\PROYECTO ANIME\\PROYECTO ANIME.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Documents\\ENTORNS-PaginaWeb\\PROYECTO\\PROYECTO ANIME\\obj\\",
+        "projectPath": "/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/PROYECTO ANIME.csproj",
+        "packagesPath": "/Users/robin/.nuget/packages/",
+        "outputPath": "/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/robin/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -67,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

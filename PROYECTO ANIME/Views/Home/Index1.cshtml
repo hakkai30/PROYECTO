@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Planetas de Dragon Ball";
+}
+
+@model Root2
+
+<h1>Planetas de Dragon Ball</h1>
+
+@foreach (var planeta in @Model.items)
+{
+    <div>
+        <h2>@planeta.name</h2>
+        <p><strong>Descripción:</strong> @planeta.description</p>
+        <img src="@planeta.image" alt="Imagen de @planeta.name" style="width: 200px; height: auto;" />
+    </div>
+}
+</div>

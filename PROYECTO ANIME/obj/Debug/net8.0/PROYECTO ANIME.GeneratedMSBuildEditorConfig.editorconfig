@@ -9,39 +9,47 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PROYECTO_ANIME
 build_property.RootNamespace = PROYECTO_ANIME
-build_property.ProjectDir = C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\
+build_property.ProjectDir = /Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME
+build_property.MSBuildProjectDirectory = /Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/User/Documents/ENTORNS-PaginaWeb/PROYECTO/PROYECTO ANIME/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Documents/ENTORNS-PaginaWeb/PROYECTO/PROYECTO ANIME/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/Views/Home/Index1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleDEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Documents/ENTORNS-PaginaWeb/PROYECTO/PROYECTO ANIME/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/Views/Home/Index2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleDIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Documents/ENTORNS-PaginaWeb/PROYECTO/PROYECTO ANIME/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Documents/ENTORNS-PaginaWeb/PROYECTO/PROYECTO ANIME/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Documents/ENTORNS-PaginaWeb/PROYECTO/PROYECTO ANIME/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Documents/ENTORNS-PaginaWeb/PROYECTO/PROYECTO ANIME/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-ear2rz0g6v
+[/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-q2kajgqjz0

@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "Transformaciones de Dragon Ball";
+}
+
+@model Root3
+
+<h1>Transformaciones de Dragon Ball</h1>
+
+<div class="container">
+    @foreach (var transformacion in @Model)
+    {
+        <div>
+            <h2>@transformacion.name</h2>
+            <p><strong>Ki:</strong> @transformacion.ki</p>
+            <img src="@transformacion.image" alt="Imagen de @transformacion.name" style="width: 200px; height: auto;" />
+        </div>
+    }
+</div>

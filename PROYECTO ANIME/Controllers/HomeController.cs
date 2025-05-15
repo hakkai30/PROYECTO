@@ -27,6 +27,34 @@ public class HomeController : Controller
 
     }
 
+    public IActionResult Index1()
+    {
+        const string apiUrl = "https://dragonball-api.com/api/planets";
+
+        var client = new HttpClient();
+        var response = client.GetAsync(apiUrl).Result;
+        var content = response.Content.ReadAsStringAsync().Result;
+
+
+        var model = JsonConvert.DeserializeObject<Root2>(content);
+        return View(model);
+
+    }
+
+     public IActionResult Index2()
+    {
+        const string apiUrl = "https://dragonball-api.com/api/transformations";
+
+        var client = new HttpClient();
+        var response = client.GetAsync(apiUrl).Result;
+        var content = response.Content.ReadAsStringAsync().Result;
+
+
+        var model = JsonConvert.DeserializeObject<Root3>(content);
+        return View(model);
+
+    }
+
     public IActionResult Privacy()
     {
         return View();

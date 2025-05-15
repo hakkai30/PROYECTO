@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Personajes de Dragon Ball";
 }
 
 @model Root
@@ -9,15 +9,15 @@
 @foreach (var personaje in @Model.items)
 {
     <div>
+        <h2>@personaje.name</h2>
         <p><strong>Raza:</strong> @personaje.race</p>
         <p><strong>Género:</strong> @personaje.gender</p>
         <p><strong>Ki:</strong> @personaje.ki / @personaje.maxKi</p>
+        <p><strong>Descripción:</strong> @personaje.description</p>
+        <img src="@personaje.image" alt="Imagen de @personaje.name" style="width: 200px; height: auto;" />
     </div>
 }
 </div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
 
