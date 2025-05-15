@@ -50,7 +50,7 @@ public class HomeController : Controller
         var content = response.Content.ReadAsStringAsync().Result;
 
 
-        var model = JsonConvert.DeserializeObject<Root3>(content);
+        var model = JsonConvert.DeserializeObject<List<Root3>>(content);
         return View(model);
 
     }

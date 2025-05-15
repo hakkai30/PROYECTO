@@ -7,3 +7,5 @@
         public string ki { get; set; }
         public object deletedAt { get; set; }
     }
+  
+
