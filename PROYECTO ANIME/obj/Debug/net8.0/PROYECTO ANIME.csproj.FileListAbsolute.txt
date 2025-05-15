@@ -32,3 +32,37 @@
 /Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/PROYECTO ANIME.pdb
 /Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/PROYECTO ANIME.genruntimeconfig.cache
 /Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/Debug/net8.0/ref/PROYECTO ANIME.dll
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\bin\Debug\net8.0\appsettings.json
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\bin\Debug\net8.0\PROYECTO ANIME.staticwebassets.runtime.json
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\bin\Debug\net8.0\PROYECTO ANIME.exe
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\bin\Debug\net8.0\PROYECTO ANIME.deps.json
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\bin\Debug\net8.0\PROYECTO ANIME.runtimeconfig.json
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\bin\Debug\net8.0\PROYECTO ANIME.dll
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\bin\Debug\net8.0\PROYECTO ANIME.pdb
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\PROYECTO ANIME.csproj.AssemblyReference.cache
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\PROYECTO ANIME.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\PROYECTO ANIME.AssemblyInfoInputs.cache
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\PROYECTO ANIME.AssemblyInfo.cs
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\PROYECTO ANIME.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\PROYECTO ANIME.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\PROYECTO ANIME.RazorAssemblyInfo.cache
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\PROYECTO ANIME.RazorAssemblyInfo.cs
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\PROYECTO ANIME.sourcelink.json
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\staticwebassets\msbuild.PROYECTO ANIME.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\staticwebassets\msbuild.build.PROYECTO ANIME.props
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.PROYECTO ANIME.props
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.PROYECTO ANIME.props
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\scopedcss\bundle\PROYECTO ANIME.styles.css
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\scopedcss\projectbundle\PROYECTO ANIME.bundle.scp.css
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\PROYECTO.DD5A7323.Up2Date
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\PROYECTO ANIME.dll
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\refint\PROYECTO ANIME.dll
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\PROYECTO ANIME.pdb
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\PROYECTO ANIME.genruntimeconfig.cache
+C:\Users\User\Documents\ENTORNS-PaginaWeb\PROYECTO\PROYECTO ANIME\obj\Debug\net8.0\ref\PROYECTO ANIME.dll

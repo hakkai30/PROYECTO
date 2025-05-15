@@ -2,20 +2,22 @@
     ViewData["Title"] = "Home Page";
 }
 
+@model Root
+
+<h1>Personajes de Dragon Ball</h1>
+
+@foreach (var personaje in @Model.items)
+{
+    <div>
+        <p><strong>Raza:</strong> @personaje.race</p>
+        <p><strong>Género:</strong> @personaje.gender</p>
+        <p><strong>Ki:</strong> @personaje.ki / @personaje.maxKi</p>
+    </div>
+}
+</div>
+
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
-@model Root
-
-<style>
-    body {
-        background-color: black;
-    }
-
-    img {
-        width: 400px;
-        height: 400px;
-    }
-</style>
