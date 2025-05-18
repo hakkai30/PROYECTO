@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/PROYECTO ANIME.csproj": {}
+    "C:\\Users\\Ramiro\\Documents\\DAW\\Programació\\Entorns-PaginaWeb\\PROYECTO\\PROYECTO ANIME\\PROYECTO ANIME.csproj": {}
   },
   "projects": {
-    "/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/PROYECTO ANIME.csproj": {
+    "C:\\Users\\Ramiro\\Documents\\DAW\\Programació\\Entorns-PaginaWeb\\PROYECTO\\PROYECTO ANIME\\PROYECTO ANIME.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/PROYECTO ANIME.csproj",
+        "projectUniqueName": "C:\\Users\\Ramiro\\Documents\\DAW\\Programació\\Entorns-PaginaWeb\\PROYECTO\\PROYECTO ANIME\\PROYECTO ANIME.csproj",
         "projectName": "PROYECTO ANIME",
-        "projectPath": "/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/PROYECTO ANIME.csproj",
-        "packagesPath": "/Users/robin/.nuget/packages/",
-        "outputPath": "/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/obj/",
+        "projectPath": "C:\\Users\\Ramiro\\Documents\\DAW\\Programació\\Entorns-PaginaWeb\\PROYECTO\\PROYECTO ANIME\\PROYECTO ANIME.csproj",
+        "packagesPath": "C:\\Users\\Ramiro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ramiro\\Documents\\DAW\\Programació\\Entorns-PaginaWeb\\PROYECTO\\PROYECTO ANIME\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/robin/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Ramiro\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -67,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xTutEcbQoU0=",
+  "dgSpecHash": "YXEpkj10oG0=",
   "success": true,
-  "projectFilePath": "/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO ANIME/PROYECTO ANIME.csproj",
+  "projectFilePath": "C:\\Users\\Ramiro\\Documents\\DAW\\Programació\\Entorns-PaginaWeb\\PROYECTO\\PROYECTO ANIME\\PROYECTO ANIME.csproj",
   "expectedPackageFiles": [
-    "/Users/robin/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\Ramiro\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
