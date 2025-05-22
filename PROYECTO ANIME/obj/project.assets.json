@@ -55,19 +55,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ramiro\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ramiro\\Documents\\DAW\\Programació\\Entorns-PaginaWeb\\PROYECTO\\PROYECTO ANIME\\PROYECTO ANIME.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\ENTORNS-PaginaWeb\\PROYECTO\\PROYECTO ANIME\\PROYECTO ANIME.csproj",
       "projectName": "PROYECTO ANIME",
-      "projectPath": "C:\\Users\\Ramiro\\Documents\\DAW\\Programació\\Entorns-PaginaWeb\\PROYECTO\\PROYECTO ANIME\\PROYECTO ANIME.csproj",
-      "packagesPath": "C:\\Users\\Ramiro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ramiro\\Documents\\DAW\\Programació\\Entorns-PaginaWeb\\PROYECTO\\PROYECTO ANIME\\obj\\",
+      "projectPath": "C:\\Users\\User\\Documents\\ENTORNS-PaginaWeb\\PROYECTO\\PROYECTO ANIME\\PROYECTO ANIME.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Documents\\ENTORNS-PaginaWeb\\PROYECTO\\PROYECTO ANIME\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ramiro\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
