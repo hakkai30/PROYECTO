@@ -24,10 +24,9 @@ Estas url’s las hemos puesto en nuestro homecontroller para el loger y que coj
 Ej: 
 
 
-public IActionResult Index()
-   {
+    public IActionResult Index()
+     {
        const string apiUrl = "https://dragonball-api.com/api/characters";
-
 
        var client = new HttpClient();
        var response = client.GetAsync(apiUrl).Result;
@@ -37,8 +36,7 @@ public IActionResult Index()
        var model = JsonConvert.DeserializeObject<Root>(content);
        return View(model);
 
-
-   }
+     }
 
 También hemos creado 3 .cs’s para poner el código transformado de json a c# uno por cada api.
 Una vez hecho creamos  3 index.cs en nuestras views dónde mostramos exactamente la info seleccionada por nosotros por cada api.
