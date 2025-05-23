@@ -22,6 +22,8 @@ Url’s de respuesta:
   
 Estas url’s las hemos puesto en nuestro homecontroller para el loger y que coja respuestas de las url’s de nuestras api’s.
 Ej: 
+
+
 public IActionResult Index()
    {
        const string apiUrl = "https://dragonball-api.com/api/characters";
