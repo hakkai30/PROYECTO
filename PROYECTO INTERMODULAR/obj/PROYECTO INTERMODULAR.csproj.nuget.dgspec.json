@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO INTERMODULAR/PROYECTO INTERMODULAR.csproj": {}
+    "/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO INTERMODULAR/PROYECTO INTERMODULAR.csproj": {}
   },
   "projects": {
-    "/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO INTERMODULAR/PROYECTO INTERMODULAR.csproj": {
+    "/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO INTERMODULAR/PROYECTO INTERMODULAR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO INTERMODULAR/PROYECTO INTERMODULAR.csproj",
+        "projectUniqueName": "/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO INTERMODULAR/PROYECTO INTERMODULAR.csproj",
         "projectName": "PROYECTO INTERMODULAR",
-        "projectPath": "/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO INTERMODULAR/PROYECTO INTERMODULAR.csproj",
+        "projectPath": "/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO INTERMODULAR/PROYECTO INTERMODULAR.csproj",
         "packagesPath": "/Users/robin/.nuget/packages/",
-        "outputPath": "/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO INTERMODULAR/obj/",
+        "outputPath": "/Users/robin/Desktop/ROBIN/PROYECTO ENTORNS/PROYECTO/PROYECTO INTERMODULAR/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/robin/.nuget/NuGet/NuGet.Config"
