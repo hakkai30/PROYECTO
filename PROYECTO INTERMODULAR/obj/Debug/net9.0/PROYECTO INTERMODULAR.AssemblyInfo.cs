@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PROYECTO INTERMODULAR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eae59c5f46fda876672ab753be12d9f05be335fd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42d1366c282cd829280c5662d44d876b286963fc")]
 [assembly: System.Reflection.AssemblyProductAttribute("PROYECTO INTERMODULAR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PROYECTO INTERMODULAR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
