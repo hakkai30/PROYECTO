@@ -14,7 +14,7 @@ class Program
         {
             connection.Open();
 
-            // Crear las tablas directamente en el código
+            // Creando tablas
             string createTablesQuery = @"
                 -- Tabla para almacenar las sagas
                 CREATE TABLE IF NOT EXISTS Sagas (
