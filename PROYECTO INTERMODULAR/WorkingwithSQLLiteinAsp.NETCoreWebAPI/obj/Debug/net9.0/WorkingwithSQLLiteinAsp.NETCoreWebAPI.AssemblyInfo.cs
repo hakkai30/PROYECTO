@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorkingwithSQLLiteinAsp.NETCoreWebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6bd1383b5afd6cfef257e5f0c0c3a7b6a329e343")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23b29b9a4ae8e2cfe7057ebd6f5875f39865a6d9")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorkingwithSQLLiteinAsp.NETCoreWebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorkingwithSQLLiteinAsp.NETCoreWebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\alumn\\Documents\\DAW 2\\Projecte intermodular de desenvolupament d'apliacions web\\PROYECTO\\PROYECTO INTERMODULAR\\WorkingwithSQLLiteinAsp.NETCoreWebAPI\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj": {}
+    "/Users/robin/Desktop/PROJECTE INTERMODULAR/PROYECTO/PROYECTO INTERMODULAR/WorkingwithSQLLiteinAsp.NETCoreWebAPI/WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj": {}
   },
   "projects": {
-    "D:\\Users\\alumn\\Documents\\DAW 2\\Projecte intermodular de desenvolupament d'apliacions web\\PROYECTO\\PROYECTO INTERMODULAR\\WorkingwithSQLLiteinAsp.NETCoreWebAPI\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj": {
+    "/Users/robin/Desktop/PROJECTE INTERMODULAR/PROYECTO/PROYECTO INTERMODULAR/WorkingwithSQLLiteinAsp.NETCoreWebAPI/WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\alumn\\Documents\\DAW 2\\Projecte intermodular de desenvolupament d'apliacions web\\PROYECTO\\PROYECTO INTERMODULAR\\WorkingwithSQLLiteinAsp.NETCoreWebAPI\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
+        "projectUniqueName": "/Users/robin/Desktop/PROJECTE INTERMODULAR/PROYECTO/PROYECTO INTERMODULAR/WorkingwithSQLLiteinAsp.NETCoreWebAPI/WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
         "projectName": "WorkingwithSQLLiteinAsp.NETCoreWebAPI",
-        "projectPath": "D:\\Users\\alumn\\Documents\\DAW 2\\Projecte intermodular de desenvolupament d'apliacions web\\PROYECTO\\PROYECTO INTERMODULAR\\WorkingwithSQLLiteinAsp.NETCoreWebAPI\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
-        "packagesPath": "D:\\Users\\alumn\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\alumn\\Documents\\DAW 2\\Projecte intermodular de desenvolupament d'apliacions web\\PROYECTO\\PROYECTO INTERMODULAR\\WorkingwithSQLLiteinAsp.NETCoreWebAPI\\obj\\",
+        "projectPath": "/Users/robin/Desktop/PROJECTE INTERMODULAR/PROYECTO/PROYECTO INTERMODULAR/WorkingwithSQLLiteinAsp.NETCoreWebAPI/WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
+        "packagesPath": "/Users/robin/.nuget/packages/",
+        "outputPath": "/Users/robin/Desktop/PROJECTE INTERMODULAR/PROYECTO/PROYECTO INTERMODULAR/WorkingwithSQLLiteinAsp.NETCoreWebAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "D:\\Users\\alumn\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/robin/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -76,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
