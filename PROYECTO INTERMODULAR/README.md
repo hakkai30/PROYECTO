@@ -35,11 +35,11 @@ Proyecto desarrollado por Fabio y Robin para la práctica AC3.
     
 3. Restaura las dependencias:
     
-    dotnet restore
+    `dotnet restore`
     
 4. Ejecuta la API:
     
-    dotnet run
+    `dotnet run`
 
 ---
 
@@ -48,12 +48,12 @@ Proyecto desarrollado por Fabio y Robin para la práctica AC3.
 Los modelos y sus relaciones principales son:
 
 
-CREATE TABLE Sagas (
+`CREATE TABLE Sagas (
   SagaName TEXT PRIMARY KEY,
   Description TEXT
-);
+);`
 
-CREATE TABLE Episodios (
+`CREATE TABLE Episodios (
   Numepisode INTEGER PRIMARY KEY,
   Title TEXT,
   Type TEXT,
@@ -63,9 +63,9 @@ CREATE TABLE Episodios (
   SagaName TEXT,
   Airdate TEXT,
   FOREIGN KEY (SagaName) REFERENCES Sagas(SagaName)
-);
+);`
 
-CREATE TABLE EpisodiosAlternativos (
+`CREATE TABLE EpisodiosAlternativos (
   Altid INTEGER PRIMARY KEY AUTOINCREMENT,
   Numepisode INTEGER,
   Title TEXT,
@@ -77,7 +77,7 @@ CREATE TABLE EpisodiosAlternativos (
   Airdate TEXT,
   Description TEXT,
   FOREIGN KEY (SagaName) REFERENCES Sagas(SagaName)
-);
+);`
 
 ---
 
@@ -148,7 +148,7 @@ http://localhost:5280/swagger/index.html
 
 ### Episodio
 
-{
+`{
   "num_episode": 1,
   "title": "Piloto",
   "type": "canon",
@@ -161,11 +161,11 @@ http://localhost:5280/swagger/index.html
     "sagaName": "Saga Inicial",
     "description": "Descripción de la saga"
   }
-}
+}`
 
 ### Episodio Alternativo
 
-{
+`{
   "alt_id": 1,
   "num_episode": 1,
   "title": "Piloto alternativo",
@@ -180,14 +180,14 @@ http://localhost:5280/swagger/index.html
     "sagaName": "Saga Especial",
     "description": "Saga paralela"
   }
-}
+}`
 
 ### Saga
 
-{
+`{
   "sagaName": "Saga Inicial",
   "description": "Descripción de la saga"
-}
+}`
 
 ---
 
@@ -212,7 +212,7 @@ curl -X GET http://localhost:5000/api/Episodios
 
 ### Crear un episodio
 
-curl -X POST http://localhost:5000/api/Episodios -H "Content-Type: application/json" -d '{
+`curl -X POST http://localhost:5000/api/Episodios -H "Content-Type: application/json" -d '{
   "num_episode": 5,
   "title": "Nombre episodio",
   "type": "canon",
@@ -221,19 +221,19 @@ curl -X POST http://localhost:5000/api/Episodios -H "Content-Type: application/j
   "votes": 89,
   "sagaName": "Saga principal",
   "airdate": "2024-05-01"
-}'
+}'`
 
 
 ### Crear saga
 
-curl -X POST http://localhost:5000/api/Sagas -H "Content-Type: application/json" -d '{
+`curl -X POST http://localhost:5000/api/Sagas -H "Content-Type: application/json" -d '{
   "sagaName": "Saga principal",
   "description": "Saga principal de la serie"
-}'
+}'`
 
 ### Crear episodio alternativo
 
-curl -X POST http://localhost:5000/api/EpisodiosAlternativos -H "Content-Type: application/json" -d '{
+`curl -X POST http://localhost:5000/api/EpisodiosAlternativos -H "Content-Type: application/json" -d '{
   "num_episode": 5,
   "title": "Versión extendida",
   "type": "especial",
@@ -243,7 +243,7 @@ curl -X POST http://localhost:5000/api/EpisodiosAlternativos -H "Content-Type: a
   "sagaName": "Saga principal",
   "airdate": "2024-05-10",
   "description": "Versión extendida del episodio 5"
-}'
+}'`
 
 ---
 
