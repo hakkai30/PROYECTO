@@ -208,11 +208,11 @@ http://localhost:5280/swagger/index.html
 
 ### Obtener todos los episodios
 
-curl -X GET http://localhost:5000/api/Episodios
+curl -X GET http://localhost:5280/api/Episodios
 
 ### Crear un episodio
 
-`curl -X POST http://localhost:5000/api/Episodios -H "Content-Type: application/json" -d '{
+`curl -X POST http://localhost:5280/api/Episodios -H "Content-Type: application/json" -d '{
   "num_episode": 5,
   "title": "Nombre episodio",
   "type": "canon",
@@ -226,14 +226,14 @@ curl -X GET http://localhost:5000/api/Episodios
 
 ### Crear saga
 
-`curl -X POST http://localhost:5000/api/Sagas -H "Content-Type: application/json" -d '{
+`curl -X POST http://localhost:5280/api/Sagas -H "Content-Type: application/json" -d '{
   "sagaName": "Saga principal",
   "description": "Saga principal de la serie"
 }'`
 
 ### Crear episodio alternativo
 
-`curl -X POST http://localhost:5000/api/EpisodiosAlternativos -H "Content-Type: application/json" -d '{
+`curl -X POST http://localhost:5280/api/EpisodiosAlternativos -H "Content-Type: application/json" -d '{
   "num_episode": 5,
   "title": "Versión extendida",
   "type": "especial",
