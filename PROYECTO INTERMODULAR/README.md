@@ -30,7 +30,8 @@ Proyecto desarrollado por Fabio y Robin para la práctica AC3.
 1. Clona este repositorio:
    
     git clone https://github.com/hakkai30/PROYECTO/edit/main/PROYECTO%20INTERMODULAR/README.md
-    cd WorkingwithSQLLiteinAsp.NETCoreWebAPI
+   
+    `cd WorkingwithSQLLiteinAsp.NETCoreWebAPI`
     
 3. Restaura las dependencias:
     
