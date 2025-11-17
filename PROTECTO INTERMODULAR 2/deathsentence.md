@@ -19,6 +19,9 @@ La tipografía principal será **Josefin Slab** y/o **Ojuju**, y contará con an
 | Texto en escritura        | #080705  |
 | Texto erróneo             | #702632  |
 
+
+<img width="1217" height="357" alt="image" src="https://github.com/user-attachments/assets/5d6e919a-0d2f-46a8-9b13-fc401ac2694c" />
+
 ---
 
 ## 2. Wireframes y Prototipos
