@@ -133,7 +133,7 @@ Una vez perdido las tres vidas el revólver girará con una bala en la recámara
 
 ---
 
-## 4. Ejemplo de flujo del juego
+## 4. Flujo del juego
 
 ---
 
