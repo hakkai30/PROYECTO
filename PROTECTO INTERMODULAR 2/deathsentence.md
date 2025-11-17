@@ -135,7 +135,11 @@ Una vez perdido las tres vidas el revólver girará con una bala en la recámara
 
 ## 4. Ejemplo de flujo del juego
 
+---
+
 <img width="974" height="511" alt="image" src="https://github.com/user-attachments/assets/9340761f-0c8c-479d-95fe-78820e86760c" />
+
+---
 
 
 
