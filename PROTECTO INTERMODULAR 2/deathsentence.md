@@ -11,7 +11,7 @@ Juego de supervivencia y escritura rápida, ambientado en una atmósfera de tens
 ## 1.1. Pantalla de inicio 
 
 **Tipografía:**  
-`font-family: 'Josefin Slab', serif;`
+`font-family: 'Courier New', monospace;`
 
 **Fondo general:**  
 `background: url("./assets/inicio.webp") no-repeat center/cover;`  
@@ -52,7 +52,7 @@ Juego de supervivencia y escritura rápida, ambientado en una atmósfera de tens
 ## 1.3. Estilos y colores en la pantalla de juego
 
 **Tipografía:**  
-`font-family: 'Courier New', monospace;`
+`font-family: 'Josefin Slab', serif;`
 
 **Colores fondo:**  
 - Fondo general: `background-color: #111;` (casi negro)
