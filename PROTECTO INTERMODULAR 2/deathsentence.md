@@ -59,6 +59,7 @@ La tipografía principal será **Josefin Slab** y/o **Ojuju**, y contará con an
 
 <img width="387" height="243" alt="image" src="https://github.com/user-attachments/assets/df32e369-e7cc-4827-ac36-88ac6dd2cf68" />
 
+---
 
 **Reglas del juego:**
 Tienes tres oportunidades para completar todos los textos que puedas en un tiempo máximo.
@@ -118,6 +119,8 @@ Una vez perdido las tres vidas el revólver girará con una bala en la recámara
 **WIREFRAME:**
 
 <img width="385" height="243" alt="image" src="https://github.com/user-attachments/assets/be26a5f1-f809-40ac-ba5e-26ba1f10efd1" />
+
+---
 
 **Mensaje:**  
 **¡PERDISTE, TE HAN DISPARADO EN LA CABEZA!**
