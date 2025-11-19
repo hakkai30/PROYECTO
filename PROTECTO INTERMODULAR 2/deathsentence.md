@@ -6,27 +6,9 @@ Juego de supervivencia y escritura rápida, ambientado en una atmósfera de tens
 
 ## 1. Estilos gráficos básicos
 
-### Tipografía
-
-- Principal:  
-  `font-family: 'Josefin Slab', serif;`
-- Alternativa:  
-  `font-family: 'Ojuju', sans-serif;`
-- Monoespaciada (añadida):  
-  `font-family: 'Courier New', monospace;`
-
-### Paleta de colores
-
-| Elemento                  | Color    | Descripción           |
-|---------------------------|----------|-----------------------|
-| Fondo hoja (fondo frases) | #FFFFFA  | Casi blanco           |
-| Frase objetivo            | #40434E  | Gris oscuro           |
-| Texto en escritura        | #080705  | Negro intenso         |
-| Texto erróneo             | #702632  | Burdeos oscuro        |
-
 ---
 
-## 1.1. Pantalla de inicio (`style-start-screen.css`)
+## 1.1. Pantalla de inicio 
 
 **Tipografía:**  
 `font-family: 'Josefin Slab', serif;`
@@ -42,7 +24,7 @@ Juego de supervivencia y escritura rápida, ambientado en una atmósfera de tens
 
 ---
 
-## 1.2. Pantalla de reglas (`style-rules-screen.css`)
+## 1.2. Pantalla de reglas 
 
 **Tipografía:**  
 `font-family: 'Josefin Slab', serif;`
