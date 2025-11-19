@@ -68,6 +68,40 @@ Juego de supervivencia y escritura rápida, ambientado en una atmósfera de tens
 
 ---
 
+## 1.4. Pantalla de victoria
+
+**Tipografía:**  
+`font-family: 'Josefin Slab', serif;`
+
+---
+
+***Paleta de colores:***
+
+| Elemento           | Color    | Descripción           |
+|--------------------|----------|-----------------------|
+| Texto principal    | #39D52A  | Verde intenso         |
+| Contorno texto     | #111     | Negro casi puro       |
+| Fondo imagen       | #3E3E3E–#222 | Gris oscuro degradado |
+
+---
+
+## 1.4. Pantalla de derrota
+
+**Tipografía:**  
+`font-family: 'Josefin Slab', serif;`
+
+---
+
+***Paleta de colores:***
+
+| Elemento           | Color    | Descripción           |
+|--------------------|----------|-----------------------|
+| Texto principal    | #B94A48  | Rojo sangre oscuro    |
+| Contorno texto     | #222     | Negro profundo        |
+| Fondo imagen       | #000     | Negro absoluto, sangre roja |
+
+---
+
 ## 2. Wireframes y Prototipos
 
 ### Pantalla de Inicio
