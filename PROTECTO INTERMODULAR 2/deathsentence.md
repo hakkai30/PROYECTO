@@ -8,20 +8,81 @@ Juego de supervivencia y escritura rápida, ambientado en una atmósfera de tens
 
 ### Tipografía
 
-La tipografía principal será **Josefin Slab** y/o **Ojuju**, y contará con animaciones.
+- Principal:  
+  `font-family: 'Josefin Slab', serif;`
+- Alternativa:  
+  `font-family: 'Ojuju', sans-serif;`
+- Monoespaciada (añadida):  
+  `font-family: 'Courier New', monospace;`
 
 ### Paleta de colores
 
-| Elemento                  | Color    |
-|---------------------------|----------|
-| Fondo hoja (fondo frases) | #FFFFFA  |
-| Frase objetivo            | #40434E  |
-| Texto en escritura        | #080705  |
-| Texto erróneo             | #702632  |
+| Elemento                  | Color    | Descripción           |
+|---------------------------|----------|-----------------------|
+| Fondo hoja (fondo frases) | #FFFFFA  | Casi blanco           |
+| Frase objetivo            | #40434E  | Gris oscuro           |
+| Texto en escritura        | #080705  | Negro intenso         |
+| Texto erróneo             | #702632  | Burdeos oscuro        |
 
 ---
 
-<img width="1217" height="357" alt="image" src="https://github.com/user-attachments/assets/5d6e919a-0d2f-46a8-9b13-fc401ac2694c" />
+## 1.1. Estilos y colores en la pantalla de juego
+
+**Tipografía:**  
+`font-family: 'Courier New', monospace;`
+
+**Colores fondo:**  
+- Fondo general: `background-color: #111;` (casi negro)
+- `.game-window`: `background-color: #222;` (ligeramente más claro)
+
+**Indicadores `.lights span`:**
+
+| Elemento           | Color        | Descripción         |
+|--------------------|--------------|---------------------|
+| Primer elemento    | #c44         | Rojo oscuro         |
+| Segundo elemento   | #ca4         | Amarillo anaranjado |
+| Tercer elemento    | #4c4         | Verde               |
+
+---
+
+## 1.2. Pantalla de reglas (`style-rules-screen.css`)
+
+**Tipografía:**  
+`font-family: 'Josefin Slab', serif;`
+
+**Fondo general:**  
+`background: url("./assets/tvantigua.png") no-repeat center/cover;`  
+*(imagen de fondo, estilo TV antigua)*
+
+**Texto del título (`.start-center h1`):**  
+- Color: `#030303` (casi negro)
+- Sombra de texto (`text-shadow`):
+
+0 0 10px #fff,
+0 0 20px #fff,
+0 0 30px #ffea00,
+0 0 40px #ffea00,
+0 0 70px #ffea00,
+0 0 80px #ffea00,
+0 0 100px #ffea00
+
+*(Blanco y amarillo brillante)*
+
+---
+
+## 1.3. Pantalla de inicio (`style-start-screen.css`)
+
+**Tipografía:**  
+`font-family: 'Josefin Slab', serif;`
+
+**Fondo general:**  
+`background: url("./assets/inicio.webp") no-repeat center/cover;`  
+*(imagen de fondo)*
+
+**Texto del título (`h1`):**  
+- Color: `rgb(79, 14, 14)` (rojo oscuro)
+- Sombra de texto (`text-shadow`):  
+`8px 4px 6px #000;` (negro)
 
 ---
 
