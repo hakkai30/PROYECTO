@@ -26,22 +26,19 @@ Juego de supervivencia y escritura rápida, ambientado en una atmósfera de tens
 
 ---
 
-## 1.1. Estilos y colores en la pantalla de juego
+## 1.1. Pantalla de inicio (`style-start-screen.css`)
 
 **Tipografía:**  
-`font-family: 'Courier New', monospace;`
+`font-family: 'Josefin Slab', serif;`
 
-**Colores fondo:**  
-- Fondo general: `background-color: #111;` (casi negro)
-- `.game-window`: `background-color: #222;` (ligeramente más claro)
+**Fondo general:**  
+`background: url("./assets/inicio.webp") no-repeat center/cover;`  
+*(imagen de fondo)*
 
-**Indicadores `.lights span`:**
-
-| Elemento           | Color        | Descripción         |
-|--------------------|--------------|---------------------|
-| Primer elemento    | #c44         | Rojo oscuro         |
-| Segundo elemento   | #ca4         | Amarillo anaranjado |
-| Tercer elemento    | #4c4         | Verde               |
+**Texto del título (`h1`):**  
+- Color: `rgb(79, 14, 14)` (rojo oscuro)
+- Sombra de texto (`text-shadow`):  
+`8px 4px 6px #000;` (negro)
 
 ---
 
@@ -70,19 +67,22 @@ Juego de supervivencia y escritura rápida, ambientado en una atmósfera de tens
 
 ---
 
-## 1.3. Pantalla de inicio (`style-start-screen.css`)
+## 1.3. Estilos y colores en la pantalla de juego
 
 **Tipografía:**  
-`font-family: 'Josefin Slab', serif;`
+`font-family: 'Courier New', monospace;`
 
-**Fondo general:**  
-`background: url("./assets/inicio.webp") no-repeat center/cover;`  
-*(imagen de fondo)*
+**Colores fondo:**  
+- Fondo general: `background-color: #111;` (casi negro)
+- `.game-window`: `background-color: #222;` (ligeramente más claro)
 
-**Texto del título (`h1`):**  
-- Color: `rgb(79, 14, 14)` (rojo oscuro)
-- Sombra de texto (`text-shadow`):  
-`8px 4px 6px #000;` (negro)
+**Indicadores `.lights span`:**
+
+| Elemento           | Color        | Descripción         |
+|--------------------|--------------|---------------------|
+| Primer elemento    | #c44         | Rojo oscuro         |
+| Segundo elemento   | #ca4         | Amarillo anaranjado |
+| Tercer elemento    | #4c4         | Verde               |
 
 ---
 
