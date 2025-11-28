@@ -1,7 +1,7 @@
 body {
     margin: 0;
     height: 100vh;
-    background: url("/assets/inicio.webp") no-repeat center/cover;
+    background: url("/PROYECTO JS/assets/inicio.webp") no-repeat center/cover;
     font-family: 'Josefin Slab', serif;
 }
 

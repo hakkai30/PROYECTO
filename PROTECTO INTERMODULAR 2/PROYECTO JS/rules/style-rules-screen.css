@@ -1,9 +1,17 @@
 body {
     margin: 0;
     height: 100vh;
-    background: url("/assets/tvantigua.png") no-repeat center/cover;
+    background: url("/PROYECTO JS/assets/tvantigua.png") no-repeat center/cover;
     font-family: 'Josefin Slab', serif;
+
+    opacity: 0;
+    transition: opacity 0.2s ease-out; 
 }
+
+body.loaded {
+    opacity: 1;
+}
+
 
 /* Contenedor general */
 .container {
@@ -15,31 +23,24 @@ body {
 /* CENTRAR PERFECTAMENTE */
 .start-center {
     position: absolute;
-    margin-top: 300px;
-    margin-left: 625px;
+    margin-top: 360px;
+    margin-left: 615px;
     transform: translate(-50%, -50%);
-
     display: flex;
-    flex-direction: column; /* Para que el título quede encima del botón */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px; /* separación entre título y botón */
+    gap: 30px;
 }
 
 .start-center h1 {
     font-size: 4rem;
     font-weight: bold;
     margin: 0;
-     color: #030303;
+    color: #030303;
     text-shadow:
-        0 0 10px #fff,
-        /* 0 0 20px #fff, */
-        /* 0 0 30px #ffea00, */
-        /* 0 0 40px #ffea00, */
-        /* 0 0 70px #ffea00, */
-        /* 0 0 80px #ffea00, */
+        0 0 20px #fff,
         0 0 100px #ffea00;
-
     animation: glowPulse 1s infinite ease-in-out;
 }
 
@@ -47,20 +48,11 @@ body {
     color: rgb(0, 0, 0);
     margin: 10px; 
     font-size: 3rem;
-    text-shadow: 40px 20px 30px #fcf9f9;
     border-radius: 400px;
     text-align: center;
-
-    /* Sombras brillantes */
     text-shadow:
         0 0 10px #fff,
-        /* 0 0 20px #fff, */
-        /* 0 0 30px #00eaff, */
-        /* 0 0 40px #00eaff, */
-        /* 0 0 70px #00eaff, */
-        /* 0 0 80px #00eaff, */
         0 0 100px #00eaff;
-
     animation: glowPulse 1s infinite ease-in-out;
 }
 
@@ -68,31 +60,16 @@ body {
     0% {
         text-shadow:
             0 0 10px #fff,
-            /* 0 0 20px #fff, */
-            /* 0 0 30px #fff, */
-            /* 0 0 40px #fff, */
-            /* 0 0 70px #fff, */
-            /* 0 0 80px #fff, */
             0 0 100px #fff;
     }
     50% {
         text-shadow:
             0 0 5px #fff,
-            /* 0 0 10px #fff, */
-            /* 0 0 20px #fff, */
-            /* 0 0 30px #fff, */
-            /* 0 0 50px #fff, */
-            /* 0 0 60px #fff, */
             0 0 80px #fff;
     }
     100% {
         text-shadow:
             0 0 10px #fff,
-            /* 0 0 20px #fff, */
-            /* 0 0 30px #fff, */
-            /* 0 0 40px #fff, */
-            /* 0 0 70px #fff, */
-            /* 0 0 80px #fff, */
             0 0 100px #fff;
     }
 }
