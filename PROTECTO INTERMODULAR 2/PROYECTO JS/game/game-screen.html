@@ -8,32 +8,49 @@
 </head>
 <body>
   <div class="game-window">
-    <div class="top-bar">
-      <div class="hearts">
-      ❤️ ❤️ ❤️
-      </div>
+    <!-- OVERLAY DE INICIO: Pide al usuario que interactúe para ganar foco -->
+        
 
-      <div class="timer">
-        ⏱
-      </div>
-    </div>
+        <!-- BARRA SUPERIOR Y MÉTRICAS -->
+        <div class="top-bar">
+            <div class="hearts" id="health-display">
+                ❤️❤️❤️
+            </div>
+            
+            <div class="timer-info">
+                <div class="metric">
+                    <span class="text-red-400 text-sm">Errores:</span>
+                    <span id="error-count" class="metric-value">0</span>
+                </div>
+                <div class="metric">
+                    <span class="text-green-400 text-sm">WPM:</span>
+                    <span id="cpm-display" class="metric-value">0</span>
+                </div>
+            </div>
+            
+        </div>
 
     
 
     <div class="progress-bar-container">
-        <div class="progress-fill" style="width: 75%;"></div>
-        <div class="progress-label">75%</div>
+      <div id="progress-fill" class="progress-fill"></div>
+      <div id="progress-label" class="progress-label">3:00</div>
     </div>
 
     <img src="/PROYECTO JS/assets/Waifu-loca.png" alt="yandere" class="yandere-image">
-
-    
-
-    <div class="game-area">
-      <div class="paper"></div>
-      <div class="keyboard"></div>
-      <div class="revolver"></div>
+    <div class="comic-bubble">
+      ¡Listo para escribir!
     </div>
+    
+    <div class="game-area">
+        <div id="text-display">
+        </div>
+        
+        <div class="keyboard"></div>
+        <div class="revolver" id="revolver-chamber"></div>
+    </div>
+    
+    <input type="text" id="hidden-input" maxlength="1">
   </div>
 
   <script src="/PROYECTO JS/game/game.js"></script>

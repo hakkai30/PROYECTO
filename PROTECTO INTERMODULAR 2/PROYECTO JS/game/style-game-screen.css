@@ -153,7 +153,7 @@ body.loaded {
     z-index: 100;
 }
 
-
+/* Contenedor de la barra de progreso (sin cambios, solo se quitan comentarios) */
 .progress-bar-container {
     position: absolute; 
     top: 20px;
@@ -173,20 +173,190 @@ body.loaded {
 .progress-fill {
     height: 100%;
     width: 100%; 
-    background-color: #c44; 
-    transition: width 0.3s ease-out; 
+    background-color: #c44;
+    transition: width 180s linear, background-color 180s linear; 
     filter: drop-shadow(0 0 5px #ff0000); 
     border-radius: 15px;
 }
 
-/* Opcional: Texto de porcentaje o etiqueta */
+/* Texto de porcentaje o etiqueta (sin cambios) */
 .progress-label {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  text-shadow: 0 0 3px #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 0 3px #000;
+}
+
+
+/* El contenido del juego irá por encima cuando se muestre */
+#game-content {
+  position: relative;
+  z-index: 2;
+}
+
+.game-window {
+    position: relative;
+}
+
+/* --- 2. ESTILO BASE DE LA BURBUJA --- */
+.comic-bubble {
+    position: absolute;
+    
+    top: 300px; 
+    left: 1250px; 
+    
+    background-color: white;
+    color: black;
+    padding: 15px 25px;
+    border: 3px solid black;
+    border-radius: 20px; 
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.4; 
+    text-align: center;
+    max-width: 300px; 
+    z-index: 10;
+    
+    /* Para controlar la visibilidad con JS  */
+    opacity: 0;           
+    pointer-events: none; 
+    transition: opacity 0.5s ease-in-out;
+}
+
+.comic-bubble.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+/* --- 3. CREACIÓN DEL PICO APUNTANDO A LA IZQUIERDA --- */
+
+.comic-bubble::before {
+    content: '';
+    position: absolute;
+    top: 50%; 
+    left: -23px; 
+    bottom: auto; 
+    transform: translateY(-50%); 
+    width: 0;
+    height: 0;
+    border: 17px solid transparent; 
+    border-right-color: black; 
+    border-left: 0; 
+    z-index: 9; 
+}
+
+.comic-bubble::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20px; 
+    bottom: auto;
+    transform: translateY(-50%); 
+    width: 0;
+    height: 0;
+    border: 15px solid transparent; 
+    border-right-color: white; 
+    border-left: 0;
+}
+
+/* --- TEXT DISPLAY / PAPER AREA --- */
+#text-display {
+    position: absolute;
+    top: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    min-height: 200px;
+    max-height: 350px;
+    padding: 30px;
+    /* Simulación de papel antiguo */
+    background-color: #f7e0c7; 
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8), inset 0 0 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid #5a4a3a;
+    font-size: 24px;
+    line-height: 1.6;
+    cursor: default;
+    z-index: 10;
+    overflow-y: auto;
+    font-family: 'Fira Code', monospace;
+}
+
+/* --- ESTILOS ESPECÍFICOS DE MECANOGRAFÍA --- */
+.char.correct {
+    color: #008000; /* Verde oscuro */
+    border-bottom: 2px solid #008000;
+}
+
+.char.incorrect {
+    color: #ef4444; /* Rojo */
+    background-color: #fee2e2;
+    border-bottom: 2px solid #ef4444;
+}
+
+.char.current {
+    background-color: #fcd34d; /* Amarillo */
+    color: #1f2937; 
+    border-radius: 4px;
+}
+
+/* Ocultar el input real */
+#hidden-input {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+/* --- BARRA DE PROGRESO DE 3 MINUTOS (Integrada) --- */
+.progress-bar-container {
+    position: absolute; 
+    top: 80px; /* Movido para evitar colisión con la top-bar */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px; 
+    height: 30px; 
+    background-color: #333; 
+    border: 2px solid #fff;
+    border-radius: 15px; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    overflow: hidden; 
+    z-index: 150;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 100%; /* Inicia en 100% para vaciarse */
+    background-color: #c44; /* Rojo inicial */
+    transition: width 180s linear, background-color 180s linear; /* 3 minutos */
+    filter: drop-shadow(0 0 5px #ff0000); 
+    border-radius: 15px;
+}
+
+.progress-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 0 3px #000;
+}
+
+/* --- MODAL DE FIN DE JUEGO (Customizado) --- */
+.end-modal {
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 3px solid #ff4d4d;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px #ff4d4d;
+    font-family: 'Creepster', cursive;
+    color: #fff;
 }
