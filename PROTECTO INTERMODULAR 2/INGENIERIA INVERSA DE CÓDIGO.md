@@ -28,8 +28,6 @@ Les principals variables d’estat estan definides a `typing.js` i controlen el 
 - **Estat visual i DOM (a partir de funcions):**
   - A través de `addClass` i `removeClass` es gestiona l’estat de focus, error i paraula actual al DOM, encara que no hi hagi un objecte d’estat gran, sinó estat repartit en classes dels elements. 
 
-*(Si vols, aquí pots afegir un paràgraf curt explicant quines d’aquestes variables reutilitzaràs o adaptaràs en el teu joc — comentari personal.)*
-
 ## 3. Funcions que canvien l’estat
 
 Diverses funcions de `typing.js` modifiquen l’estat lògic del joc (temps, paraules mostrades, puntuació). 
@@ -122,8 +120,6 @@ Aquest joc no té col·lisions físiques com un joc d’acció, però sí “col
   - El *handler* de teclat compara cada tecla premuda amb el caràcter esperat de la paraula actual i marca visualment l’error o l’encert.   
   - Quan l’usuari arriba al final de la paraula o prem espai, es considera “col·lisió” amb el final de paraula i s’actualitza la puntuació i es genera una nova paraula.   
 
-*(Pots afegir aquí si al teu joc hi haurà col·lisions físiques reals, p. ex. enemics, obstacles, etc., i com et pot inspirar aquesta idea de “col·lisió lògica”.)*
-
 ## 10. Documentació existent
 
 El repositori té una descripció bàsica a GitHub i està acompanyat d’un vídeo-tutorial a YouTube que explica pas a pas com es construeix el joc.   
@@ -137,4 +133,4 @@ El repositori té una descripció bàsica a GitHub i està acompanyat d’un ví
 - També destaca la forma senzilla d’estructurar el joc sense frameworks, només amb HTML, CSS i JS, cosa que fa el codi fàcil d’entendre i d’adaptar per a un altre gènere de videojoc en el navegador.   
 - A nivell de complexitat tècnica, el punt més delicat és mantenir sincronitzats el temps real, l’estat visual del joc i el tractament dels esdeveniments de teclat sense que es desquadri la lògica (especialment amb focus/blur i reinicis).   
 
-*(Aquí pots afegir 2–3 frases teves parlant de què vols copiar, millorar o canviar al teu propi projecte.)*
+Tema de frases no copiarem ninguna, sino que ho crearem nosaltres y seran frases més curtes, i posarem un temps determinat per escriure frases. Aixó sí, nosaltres posarem 3 vides, i després d'aixó es faría com un random, ja que es giraría una càmera d'un revolver que es mostrará en pantalla, així d'un estil joc de la "Ruleta Rusa", i depenent si toca la bala o no, s'acabaría el joc o es segueix jugant fins que passin 3 mins.
