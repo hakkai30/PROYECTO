@@ -7,18 +7,34 @@
     <link rel="stylesheet" href="/PROYECTO JS/index.css">
 </head>
 <body>
-    <!-- <div id="intro-video">
-        <video id="introVideo" src="/PROYECTO JS/assets/videoplayback.mp4" autoplay muted playsinline></video>
-    </div> -->
-    <div class="container"> 
+    
+    <button id="audioControl" class="audio-control-btn">🔇</button>
+    <audio id="musicaFondo" src="/PROYECTO JS/sounds/soundstartscreen.mp3" loop></audio>
+
+    <div id="startScreen" class="screen container visible"> 
         <div class="start-center">
             <h1>
                 <span class="title-1">DEATH</span>
                 <span class="title-2">SENTENCE</span>
             </h1>
-            <a href="/PROYECTO JS/rules/rules-screen.html" class="start-button">START GAME</a>
+            <button id="startButton" class="start-button">START GAME</button>
         </div>
     </div>
+
+    <div id="rulesScreen" class="screen rules-container" style="display: none;">
+        <div id="tvContent">
+            <div class="start-center">
+                <h1>RULES</h1>
+                <p>
+                    Tienes tres oportunidades para completar todos los textos que puedas en un tiempo maximo. 
+                    Una vez perdido las tres vidas el revólver girara con una bala en la recamara, 
+                    si acciona el gatillo y se dispara MUERES si no sale la bala, 
+                    se te devuelven las tres vidas y sigues hasta que se acabe el tiempo o vuelvas a equivocarte 3 veces.
+                </p>
+            </div>
+        </div>
+    </div>
+
     <script src="/PROYECTO JS/index.js"></script>
 </body>
 </html>
