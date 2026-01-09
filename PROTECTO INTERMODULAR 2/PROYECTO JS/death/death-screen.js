@@ -37,6 +37,4 @@ document.addEventListener('DOMContentLoaded', () => {
     introEvilLaugh.pause();
     introEvilLaugh.currentTime = 0;
   });
-});
-
-  
+} );

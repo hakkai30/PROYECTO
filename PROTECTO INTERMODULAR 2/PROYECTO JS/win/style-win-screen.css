@@ -1,27 +1,46 @@
 body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url('/PROYECTO JS/assets/end.gif') center center / cover no-repeat;
-  }
-  
-  .winner-message {
-    font-family: 'Josefin Slab', serif;
-    color: #39D52A;
-    font-size: 6em;
-    font-weight: bold;
-    text-align: center;
-    text-shadow:
-      2px 2px 0 #111,
-      0 0 10px #111,
-      0 0 40px #39D52A;
-    /* background: rgba(0, 0, 0, 0.35);  */
-    padding: 30px 40px;
-    /* border-radius: 12px; */
-    letter-spacing: 2px;
-    line-height: 1.1;
-  }
-  
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;          /* texto arriba, botón abajo */
+  align-items: center;
+  justify-content: center;
+  background: url('/PROYECTO JS/assets/end.gif') center center / cover no-repeat;
+}
+
+.winner-message {
+  font-family: 'Josefin Slab', serif;
+  color: #39D52A;
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+  text-shadow:
+    2px 2px 0 #111,
+    0 0 10px #111,
+    0 0 40px #39D52A;
+  /* background: rgba(0, 0, 0, 0.35); */
+  padding: 30px 40px;
+  /* border-radius: 12px; */
+  letter-spacing: 2px;
+  line-height: 1.1;
+}
+
+#retryWinButton {
+  font-family: 'Josefin Slab', serif;
+  color: #39D52A;
+  font-size: 1em;
+  font-weight: bold;
+  text-shadow:
+    2px 2px 0 #111,
+    0 0 8px #111,
+    0 0 36px #39D52A;
+
+  background: black;              /* fondo negro */
+  border: 2px solid #39D52A;      /* recuadro verde */
+  border-radius: 8px;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
