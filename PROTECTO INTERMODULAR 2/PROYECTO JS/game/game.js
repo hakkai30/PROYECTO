@@ -11,36 +11,37 @@ window.addEventListener('load', function () {
 
 // Español: Frases del juego
 const phrases = [
-    "El juego comienza ahora, concéntrate en cada letra y no des ni una sola oportunidad al error.",
+    "Haber nacido es un inconveniente tan grave que, si nos dieran a elegir, nadie aceptaría el regalo de la existencia, pues vivir no es más que el esfuerzo inútil de retrasar por unos instantes el regreso al vacío absoluto de donde nunca debimos salir.",
     "Escribe sin errores mientras el reloj avanza sin piedad, cada segundo cuenta en esta ruleta mortal.",
-    "Mantén una precisión total aunque tus manos tiemblen; un fallo puede acercarte un disparo a la cabeza.",
-    "El temporizador sigue activo y no se detendrá por tus nervios, respira hondo y sigue escribiendo.",
-    "Tres fallos máximo antes de tentar a la suerte; cada equivocación hace girar la recámara del revólver.",
-    "¡Bang si fallas demasiadas veces! Tu vida en el juego pende de un simple carácter mal escrito.",
-    "La ruleta rusa está lista y cada letra correcta te aleja un poco más del sonido del disparo.",
-    "La velocidad es clave, pero la calma decide si sobrevives los tres minutos de esta prueba macabra.",
-    "Comas, puntos y tildes son tus verdaderos enemigos; ignóralos y pagarás el precio con una bala virtual.",
-    "La práctica constante es la clave para dominar el teclado incluso bajo presión y con el miedo respirándote en la nuca.",
-    "Observa bien cada letra, evita los errores y demuestra que puedes mantener la cabeza fría bajo cualquier amenaza."
+    "El sentido de la vida es que termina.",
+    "La existencia es soportable solo como un fenómeno estético, porque si la miráramos con justicia y verdad, la fealdad del mundo nos obligaría a apartar la vista o a perder la razón de inmediato.",
+    "No soy nada, nunca seré nada, no puedo querer ser nada; aparte de esto, tengo en mí todos los sueños del mundo.",
+    "Todo es una asquerosidad.",
+    "La vida es un estado de carencia constante.",
+    "No nos une el amor sino el espanto; será por eso que la quiero tanto."
 ];
 
-
-let currentPhraseIndex = 0;
-let textToType = phrases[currentPhraseIndex];
+let availablePhrases = [...phrases];
+let currentPhraseIndex = Math.floor(Math.random() * availablePhrases.length);
+let textToType = availablePhrases[currentPhraseIndex];
+availablePhrases.splice(currentPhraseIndex, 1);
 
 
 
 // Diálogos del personaje
 const dialogs = [
-    "¡Tienes solo unos segundos! No te distraigas con mi imagen...",
-    "¡Rápido, o el tiempo se acaba!",
+    "Esto es tu culpa, ¡ERES EL ÚNICO CULPABLE!",
+    "Date prisa o todos moriran",
     "¡Escribe o muere!",
-    "Si cometes un error, la recamara girara...",
-    "Tick Tock. ¿Estás temblando?"
+    "En tus manos estan las vidas de tus alumnos",
+    "Ya que no hiciste nada por ayudarme a mi, intenta salvarlos a ellos",
+    "Tu sabias lo que estaba pasando, ¿VERDAD QUE SI?",
+    "No hiciste nada...",
+    "SOLO NO QUERIA ESTAR SOLA..."
 ];
 let currentDialogIndex = 0;
 const DIALOG_DURATION = 5000; 
-const INTERVAL_TIME = 3000; 
+const INTERVAL_TIME = 20000; 
 
 
 // Constantes de tiempo de la barra
@@ -68,8 +69,13 @@ const comicBubble = document.getElementById('comic-bubble');
 const revolverChamber = document.getElementById('revolver-chamber');
 const healthDisplay = document.getElementById('health-display');
 const chamberSound = document.getElementById('chamberSound');
-const keySound = document.getElementById('keySound'); // NUEVO: sonido de tecla
+const keySound = document.getElementById('keySound');
+const bgMusic = document.getElementById('bgMusic');
+const emptyShotSound = document.getElementById('emptyShotSound');
+const gunshotSound = document.getElementById('gunshotSound');
 const CHANCE_OF_SHOT = 1 / 6;
+const yandereImage = document.querySelector('.yandere-image');
+let isCharacterClickable = false;
 
 // Referencias de la barra de progreso
 const progressFill = document.getElementById('progress-fill');
@@ -89,26 +95,40 @@ function formatTime(totalSeconds) {
 }
 
 function startProgressBar() {
-    let timeLeft = TOTAL_SECONDS;
+    let timeLeft = TOTAL_SECONDS; // 180
     
-    progressFill.style.transition = 'width 180s linear, background-color 180s linear';
-    progressFill.style.width = '0%';
-    progressFill.style.backgroundColor = '#000'; 
-    
+    // Aseguramos estado inicial
+    progressFill.style.width = '100%';
     progressLabel.textContent = formatTime(timeLeft);
-    timeLeft--;
+
+    // Limpiamos cualquier intervalo previo por seguridad
+    if (timerIntervalId) clearInterval(timerIntervalId);
 
     timerIntervalId = setInterval(() => {
-        if (timeLeft >= 0) {
-            progressLabel.textContent = formatTime(timeLeft);
+        if (timeLeft > 0) {
             timeLeft--;
+            
+            // 1. Actualizar el texto (02:59, 02:58...)
+            progressLabel.textContent = formatTime(timeLeft);
+            
+            // 2. Calcular y actualizar el ancho
+            const percentage = (timeLeft / TOTAL_SECONDS) * 100;
+            progressFill.style.width = percentage + '%';
+
+            // 3. Cambio de color dinámico (opcional)
+            if (percentage < 30) {
+                progressFill.style.backgroundColor = 'rgba(255, 0, 0, 0.63)';
+                progressFill.style.filter = 'drop-shadow(0 0 10px rgba(255, 0, 0, 0.63))';
+            }
         } else {
+            // FIN DEL TIEMPO
             clearInterval(timerIntervalId);
             progressLabel.textContent = "00:00";
+            progressFill.style.width = '0%';
+            
+            // Ejecutar derrota
             if (isTyping) {
-                endGame(false, "¡El tiempo se agotó! No fuiste lo suficientemente rápido.");
-                // Redirección a pantalla de derrota
-                window.location.href = "/PROYECTO JS/death/death-screen.html";
+                endGame(false, "¡El tiempo se agotó!");
             }
         }        
     }, 1000); 
@@ -124,21 +144,52 @@ function showBubble(message, duration = DIALOG_DURATION) {
 
     comicBubble.textContent = message;
     comicBubble.classList.add('show');
+    isCharacterClickable = true;
+    yandereImage.style.cursor = 'pointer';
 
-    setTimeout(() => {
+    const isHelpDialog = (message === "SOLO NO QUERIA ESTAR SOLA...");
+
+    if (comicBubble.timeoutId) {
+        clearTimeout(comicBubble.timeoutId);
+    }
+
+    comicBubble.timeoutId = setTimeout(() => {
         comicBubble.classList.remove('show');
+        yandereImage.style.cursor = 'default';
     }, duration);
+
+    yandereImage.dataset.canWin = isHelpDialog;
 }
 
 function startDialogLoop() {
+    // Primera ejecución
     showBubble(dialogs[currentDialogIndex], DIALOG_DURATION);
 
     setInterval(() => {
-        currentDialogIndex = (currentDialogIndex + 1) % dialogs.length;
-        showBubble(dialogs[currentDialogIndex], DIALOG_DURATION);
-    }, INTERVAL_TIME);
+        // Solo lanza diálogos si el juego está activo
+        if (isTyping) {
+            currentDialogIndex = (currentDialogIndex + 1) % dialogs.length;
+            showBubble(dialogs[currentDialogIndex], DIALOG_DURATION);
+        }
+    }, INTERVAL_TIME + DIALOG_DURATION); 
 }
 
+yandereImage.addEventListener('click', () => {
+    const isSpeaking = comicBubble.classList.contains('show');
+
+    if (isSpeaking) {
+        if (yandereImage.dataset.canWin === "true") {
+            isTyping = false;
+            if (timerIntervalId) clearInterval(timerIntervalId);
+        
+            showBubble("Mnh-mu-muchas gracias...", 20000);
+            
+            setTimeout(() => {
+                window.location.href = "/PROYECTO JS/second-win/second-win-screen.html";
+            }, 2000);
+        } 
+    }
+});
 
 // =========================================================
 // === V. LÓGICA DEL JUEGO DE MECANOGRAFÍA ===
@@ -167,21 +218,18 @@ function initializeText() {
 }
 
 function loadNextPhrase() {
-    currentPhraseIndex++;
-    if (currentPhraseIndex >= phrases.length) {
-        // Ha terminado TODAS las frases antes de tiempo → victoria
-        endGame(true, "¡Has sobrevivido a todas las frases!");
-        // Redirección a pantalla de victoria
-        window.location.href = "/PROYECTO JS/win/win-screen.html";
+    if (availablePhrases.length === 0) {
+        endGame(true, "Victoria"); 
         return;
     }
-    textToType = phrases[currentPhraseIndex];
+
+    currentPhraseIndex = Math.floor(Math.random() * availablePhrases.length);
+    textToType = availablePhrases[currentPhraseIndex];
+    availablePhrases.splice(currentPhraseIndex, 1);
+
     initializeText();
     isTyping = true;
 }
-
-
-
 
 function updateHealthDisplay() {
     healthDisplay.innerHTML = '❤️'.repeat(health) + '🤍'.repeat(3 - health);
@@ -198,6 +246,14 @@ function playKeySound() {
     });
 }
 
+function playBackgroundMusic() {
+    if (bgMusic) {
+        bgMusic.volume = 0.4; // Ajusta el volumen principal (0.0 a 1.0)
+        bgMusic.play().catch(error => {
+            console.log("El navegador bloqueó el autoplay. Esperando interacción.");
+        });
+    }
+}
 
 // Simula la rotación de la recámara tras un error.
 function spinChamber() {
@@ -206,6 +262,7 @@ function spinChamber() {
     const probability = chambersLoaded / 6;
     const shotFired = Math.random() < probability;
 
+    // Sonido de la recámara girando
     if (chamberSound) {
         chamberSound.currentTime = 0; 
         chamberSound.play().catch(e => console.warn("Fallo al reproducir sonido de recámara:", e));
@@ -215,44 +272,51 @@ function spinChamber() {
     revolverChamber.style.transition = 'transform 4s ease-out';
     revolverChamber.style.transform = `rotate(${randomRotation}deg)`;
 
-    let message;
-
     setTimeout(() => {
         revolverChamber.style.transition = 'none';
         revolverChamber.style.transform = '';
 
         if (shotFired) {
+            // === CASO: DISPARO REAL (QUITA VIDA) ===
+            if (gunshotSound) {
+                gunshotSound.currentTime = 0;
+                gunshotSound.play().catch(e => console.warn("Error en gunshot:", e));
+            }
+
             health--;
-            chambersLoaded = 1;
+            chambersLoaded = 1; // Se reinicia la probabilidad
             updateHealthDisplay();
-
-            message = `La recámara estaba cargada. Pierdes una vida. Te quedan ${health}.`;
-
+            
             if (health <= 0) {
-                isTyping = false;
-                document.removeEventListener('keydown', handleKeyInput);
-                if (timerIntervalId) {
-                    clearInterval(timerIntervalId);
-                }
-                window.location.href = "/PROYECTO JS/death/death-screen.html";
+                endGame(false, "Te has quedado sin vidas.");
                 return;
             } 
 
-            isTyping = true;
+            // Pequeña pausa tras el susto antes de poder escribir
+            setTimeout(() => { isTyping = true; }, 500);
         } 
         else {
+            // === CASO: CLIC SECO (NO HUBO DISPARO) ===
+            if (emptyShotSound) {
+                emptyShotSound.currentTime = 0;
+                emptyShotSound.play().catch(e => console.warn("Error en emptyshot:", e));
+            }
+
             if (chambersLoaded < 6) {
                 chambersLoaded++;
             }
-            message = `Clic. Tuviste suerte... La probabilidad es ahora ${chambersLoaded}/6.`;
             isTyping = true;
         }
-
-        showBubble(message, 4000);
 
     }, 4100);
 }
 
+function updateCPM() {
+    if (startTime === null) return;
+    const timeElapsed = (Date.now() - startTime) / 60000;
+    const wpm = Math.round((totalCharactersTyped / 5) / timeElapsed);
+    cpmDisplay.textContent = wpm || 0;
+}
 
 // Manejador de eventos de teclado.
 function handleKeyInput(event) {
@@ -263,6 +327,7 @@ function handleKeyInput(event) {
 
     if (startTime === null) {
         startTime = Date.now();
+        playBackgroundMusic();
     }
     
     if (event.ctrlKey || event.altKey || event.metaKey) {
@@ -306,7 +371,7 @@ function handleKeyInput(event) {
         errors++;
         errorCountDisplay.textContent = errors;
 
-        console.log(`❌ ERROR ${errors}.`);
+        console.log(`ERROR ${errors}.`);
 
         if (errors % 5 === 0) {
             spinChamber();
@@ -316,7 +381,6 @@ function handleKeyInput(event) {
     currentCharacterIndex++;
 
     if (currentCharacterIndex === textToType.length) {
-        // Pasa a la siguiente frase en bucle
         loadNextPhrase();
         return;
     
@@ -341,47 +405,18 @@ function handleKeyInput(event) {
     event.preventDefault();
 }
 
-function updateCPM() {
-    if (!startTime) return;
-
-    const currentTime = Date.now();
-    const timeElapsedInMinutes = (currentTime - startTime) / 60000;
-    
-    if (timeElapsedInMinutes > 0) {
-        const wpm = Math.round((totalCharactersTyped / 5) / timeElapsedInMinutes); 
-        cpmDisplay.textContent = wpm;
-    }
-}
-
 function endGame(won, message) {
     isTyping = false;
     document.removeEventListener('keydown', handleKeyInput);
-    if (timerIntervalId) {
-        clearInterval(timerIntervalId);
+    if (timerIntervalId) clearInterval(timerIntervalId);
+    if (bgMusic) bgMusic.pause();
+
+    if (won) {
+        window.location.href = "/PROYECTO JS/win/win-screen.html";
+    } else {
+        window.location.href = "/PROYECTO JS/death/death-screen.html";
     }
-    
-    const finalTime = (Date.now() - startTime) / 60000; 
-    const finalWPM = Math.round((totalCharactersTyped / 5) / finalTime);
-    
-    const titleColor = won ? 'text-green-400' : 'text-red-500';
-
-    textDisplay.innerHTML = `
-        <div class="end-modal text-center p-4 mx-auto my-auto mt-4" style="max-width: 400px; margin-top: 50px; text-align: center;">
-            <p class="text-4xl font-bold ${titleColor} mb-4">${won ? '¡VICTORIA!' : '¡GAME OVER!'}</p>
-            <p class="text-xl mb-4">${message}</p>
-            <p class="text-lg">WPM final: <span class="font-extrabold text-yellow-400">${finalWPM}</span></p>
-            <p class="text-md">Errores totales: <span class="text-red-400">${errors}</span></p>
-            <p class="text-md">Vidas restantes: ${healthDisplay.innerHTML}</p>
-            <button onclick="window.location.reload()" 
-                    style="margin-top: 1.5rem; background-color: #3b82f6; color: white; font-weight: bold; padding: 0.75rem 1.5rem; border-radius: 0.5rem; transition: background-color 0.2s; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);">
-                Reiniciar
-            </button>
-        </div>
-    `;
-    
-    cpmDisplay.textContent = finalWPM;
 }
-
 
 // --- INICIALIZACIÓN ---
 document.addEventListener('DOMContentLoaded', () => {

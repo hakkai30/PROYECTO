@@ -38,21 +38,21 @@
     </div>
 
     <img src="/PROYECTO JS/assets/Waifu-loca.png" alt="yandere" class="yandere-image">
-    <div class="comic-bubble">
-      ¡Listo para escribir!
-    </div>
+    <div class="comic-bubble" id="comic-bubble"></div>
     
     <div class="game-area">
-        <div id="text-display">
-        </div>
-        
-        <div class="keyboard"></div>
-        <div class="revolver" id="revolver-chamber"></div>
+      <div id="text-display"></div>
+      
+      <div class="keyboard"></div>
+      <div class="revolver" id="revolver-chamber"></div>
     </div>
     
     <input type="text" id="hidden-input" maxlength="1">
   </div>
+  <audio id="bgMusic" src="/PROYECTO JS/sounds/soundgamescreen.mp3" loop></audio>
   <audio id="chamberSound" src="/PROYECTO JS/sounds/recamaradelrevolver.mp3"></audio>
+  <audio id="emptyShotSound" src="/PROYECTO JS/sounds/emptygunshot.mp3"></audio>
+  <audio id="gunshotSound" src="/PROYECTO JS/sounds/gunshot.mp3"></audio>
   <audio id="keySound" src="/PROYECTO JS/sounds/typewrite.mp3"></audio>
   <script src="/PROYECTO JS/game/game.js"></script>
 </body>

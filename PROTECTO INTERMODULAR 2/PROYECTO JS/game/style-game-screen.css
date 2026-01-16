@@ -214,7 +214,7 @@ body.loaded {
     padding: 15px 25px;
     border: 3px solid black;
     border-radius: 20px; 
-    font-family: Arial, sans-serif;
+    
     font-weight: bold;
     font-size: 1.2rem;
     line-height: 1.4; 
@@ -275,35 +275,35 @@ body.loaded {
     min-height: 200px;
     max-height: 350px;
     padding: 30px;
-    /* Simulación de papel antiguo */
-    background-color: #f7e0c7; 
-    color: #333;
+    
+    background-color: rgba(0, 0, 0, 0.4);
+    filter: blur(0.8px);
+    backdrop-filter: blur(1px);
+    color: #f1ebeb;
     border-radius: 15px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8), inset 0 0 20px rgba(0, 0, 0, 0.3);
     border: 2px solid #5a4a3a;
+
     font-size: 24px;
+    font-weight: 500;
     line-height: 1.6;
+
     cursor: default;
     z-index: 10;
     overflow-y: auto;
-    font-family: 'Fira Code', monospace;
 }
 
 /* --- ESTILOS ESPECÍFICOS DE MECANOGRAFÍA --- */
 .char.correct {
-    color: #008000; /* Verde oscuro */
-    border-bottom: 2px solid #008000;
+    color: #52ed52;
 }
 
 .char.incorrect {
-    color: #ef4444; /* Rojo */
-    background-color: #fee2e2;
-    border-bottom: 2px solid #ef4444;
+    color: #f07d7d;
 }
 
 .char.current {
-    background-color: #fcd34d; /* Amarillo */
-    color: #1f2937; 
+    background-color: #eeb80661; 
+    color: #000000; 
     border-radius: 4px;
 }
 
@@ -334,7 +334,7 @@ body.loaded {
     height: 100%;
     width: 100%; /* Inicia en 100% para vaciarse */
     background-color: #c44; /* Rojo inicial */
-    transition: width 180s linear, background-color 180s linear; /* 3 minutos */
+    transition: width 1s linear, background-color 0.5s ease;
     filter: drop-shadow(0 0 5px #ff0000); 
     border-radius: 15px;
 }
