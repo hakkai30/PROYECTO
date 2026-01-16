@@ -12,13 +12,13 @@ window.addEventListener('load', function () {
 // Español: Frases del juego
 const phrases = [
     "Haber nacido es un inconveniente tan grave que, si nos dieran a elegir, nadie aceptaría el regalo de la existencia, pues vivir no es más que el esfuerzo inútil de retrasar por unos instantes el regreso al vacío absoluto de donde nunca debimos salir.",
-    "Escribe sin errores mientras el reloj avanza sin piedad, cada segundo cuenta en esta ruleta mortal.",
+    "Jeremías 20:14: Maldito el día en que nací; el día en que mi madre me dio a luz no sea bendito.",
     "El sentido de la vida es que termina.",
     "La existencia es soportable solo como un fenómeno estético, porque si la miráramos con justicia y verdad, la fealdad del mundo nos obligaría a apartar la vista o a perder la razón de inmediato.",
     "No soy nada, nunca seré nada, no puedo querer ser nada; aparte de esto, tengo en mí todos los sueños del mundo.",
     "Todo es una asquerosidad.",
     "La vida es un estado de carencia constante.",
-    "No nos une el amor sino el espanto; será por eso que la quiero tanto."
+    "Job 3:11: ¿Por qué no morí yo en la matriz, o expiré al salir del vientre?"
 ];
 
 let availablePhrases = [...phrases];
