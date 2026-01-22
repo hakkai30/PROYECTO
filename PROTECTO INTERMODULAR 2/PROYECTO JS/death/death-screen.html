@@ -9,22 +9,15 @@
 <body>
   <div class="lose-message"> 
     <p>¡HAS MUERTO!,</p>
-    <span>NO HAS PODIDO SALVAR A NADIE...</span>
+    <span>NO HAS PODIDO SALVAR A NADIE</span>
+    <span>¡TU INCOMPETENCIA TE HA CONDENADO!</span>
+    <span>A TI Y A TODOS...</span>
   </div>
   <div class="button-restart"><a href="../game/game-screen.html" id="startButton">Volver a Jugar</a></div>
 
-  <!-- Audio intro: risa malvada (SUENA UNA VEZ) -->
-  <audio id="introEvilLaugh" preload="auto">
-    <source src="/PROYECTO JS/sounds/evil-girl-laughing-401720.mp3" type="audio/mpeg">
-  </audio>
-
-  <!-- Música de fondo en bucle -->
-  <audio id="bgDeathMusic" preload="auto" loop>
-    <source src="/PROYECTO JS/sounds/sounddeathscreen.mp3" type="audio/mpeg">
-  </audio>
-
-  <!-- JS externo -->
-  <script src="/PROYECTO JS/death/death-screen.js"></script>
+  <audio id="introEvilLaugh" preload="auto" src="/PROYECTO JS/sounds/lughinggirl.mp3" type="audio/mpeg"></audio>
+  <audio id="bgDeathMusic" preload="auto" loop src="/PROYECTO JS/sounds/sounddeathscreen.mp3" type="audio/mpeg"></audio>
+ <script src="/PROYECTO JS/death/death-screen.js"></script>
 </body>
 </html>
 

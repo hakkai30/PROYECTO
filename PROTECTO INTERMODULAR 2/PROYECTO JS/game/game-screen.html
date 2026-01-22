@@ -8,29 +8,22 @@
 </head>
 <body>
   <div class="game-window">
-    <!-- OVERLAY DE INICIO: Pide al usuario que interactúe para ganar foco -->
-        
-
-        <!-- BARRA SUPERIOR Y MÉTRICAS -->
-        <div class="top-bar">
-            <div class="hearts" id="health-display">
-                ❤️❤️❤️
-            </div>
-            
-            <div class="timer-info">
-                <div class="metric">
-                    <span class="text-red-400 text-sm">Errores:</span>
-                    <span id="error-count" class="metric-value">0</span>
-                </div>
-                <div class="metric">
-                    <span class="text-green-400 text-sm">WPM:</span>
-                    <span id="cpm-display" class="metric-value">0</span>
-                </div>
-            </div>
-            
-        </div>
-
-    
+    <div class="top-bar">
+      <div class="hearts" id="health-display">
+        ❤️❤️❤️
+      </div>
+      
+      <div class="timer-info">
+          <div class="metric">
+              span class="text-red-400 text-sm">Errores:</span>
+            <span id="error-count" class="metric-value">0</span>
+          </div>
+          <div class="metric">
+            <span class="text-green-400 text-sm">WPM:</span>
+            <span id="cpm-display" class="metric-value">0</span>
+          </div>
+      </div>
+    </div>
 
     <div class="progress-bar-container">
       <div id="progress-fill" class="progress-fill"></div>
@@ -42,18 +35,18 @@
     
     <div class="game-area">
       <div id="text-display"></div>
-      
       <div class="keyboard"></div>
-      <div class="revolver" id="revolver-chamber"></div>
+      <div class="revolver" id="revolver-chamber">
     </div>
-    
-    <input type="text" id="hidden-input" maxlength="1">
-  </div>
-  <audio id="bgMusic" src="/PROYECTO JS/sounds/soundgamescreen.mp3" loop></audio>
-  <audio id="chamberSound" src="/PROYECTO JS/sounds/recamaradelrevolver.mp3"></audio>
-  <audio id="emptyShotSound" src="/PROYECTO JS/sounds/emptygunshot.mp3"></audio>
-  <audio id="gunshotSound" src="/PROYECTO JS/sounds/gunshot.mp3"></audio>
-  <audio id="keySound" src="/PROYECTO JS/sounds/typewrite.mp3"></audio>
-  <script src="/PROYECTO JS/game/game.js"></script>
-</body>
+
+    </div><input type="text" id="hidden-input" maxlength="1"></div>
+
+    <audio id="bgMusic" src="/PROYECTO JS/sounds/soundgamescreen.mp3" loop></audio>
+    <audio id="chamberSound" src="/PROYECTO JS/sounds/recamaradelrevolver.mp3"></audio>
+    <audio id="emptyShotSound" src="/PROYECTO JS/sounds/emptygunshot.mp3"></audio>
+    <audio id="gunshotSound" src="/PROYECTO JS/sounds/gunshot.mp3"></audio>
+    <audio id="keySound" src="/PROYECTO JS/sounds/typewrite.mp3"></audio>
+    <audio id="clockSound" src="/PROYECTO JS/sounds/soundreloj.mp3" loop></audio>
+    <script src="/PROYECTO JS/game/game.js"></script>
+  </body>
 </html>

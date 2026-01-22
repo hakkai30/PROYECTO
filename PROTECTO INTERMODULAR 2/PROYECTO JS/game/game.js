@@ -1,4 +1,3 @@
-// Lógica de carga de página para animación fade-in
 window.addEventListener('load', function () {
     document.body.classList.add('loaded');
 });
@@ -9,7 +8,7 @@ window.addEventListener('load', function () {
 // =========================================================
 
 
-// Español: Frases del juego
+//Frases del juego
 const phrases = [
     "Haber nacido es un inconveniente tan grave que, si nos dieran a elegir, nadie aceptaría el regalo de la existencia, pues vivir no es más que el esfuerzo inútil de retrasar por unos instantes el regreso al vacío absoluto de donde nunca debimos salir.",
     "Jeremías 20:14: Maldito el día en que nací; el día en que mi madre me dio a luz no sea bendito.",
@@ -26,8 +25,6 @@ let currentPhraseIndex = Math.floor(Math.random() * availablePhrases.length);
 let textToType = availablePhrases[currentPhraseIndex];
 availablePhrases.splice(currentPhraseIndex, 1);
 
-
-
 // Diálogos del personaje
 const dialogs = [
     "Esto es tu culpa, ¡ERES EL ÚNICO CULPABLE!",
@@ -37,16 +34,13 @@ const dialogs = [
     "Ya que no hiciste nada por ayudarme a mi, intenta salvarlos a ellos",
     "Tu sabias lo que estaba pasando, ¿VERDAD QUE SI?",
     "No hiciste nada...",
-    "SOLO NO QUERIA ESTAR SOLA..."
+    "ME SENTIA MUY SOLA..."
 ];
+
 let currentDialogIndex = 0;
 const DIALOG_DURATION = 5000; 
 const INTERVAL_TIME = 20000; 
-
-
-// Constantes de tiempo de la barra
-const TOTAL_SECONDS = 180; // 3 minutos
-
+const TOTAL_SECONDS = 180;
 
 // Estado del juego
 let currentCharacterIndex = 0;
@@ -71,13 +65,12 @@ const healthDisplay = document.getElementById('health-display');
 const chamberSound = document.getElementById('chamberSound');
 const keySound = document.getElementById('keySound');
 const bgMusic = document.getElementById('bgMusic');
+const clockSound = document.getElementById('clockSound');
 const emptyShotSound = document.getElementById('emptyShotSound');
 const gunshotSound = document.getElementById('gunshotSound');
 const CHANCE_OF_SHOT = 1 / 6;
 const yandereImage = document.querySelector('.yandere-image');
 let isCharacterClickable = false;
-
-// Referencias de la barra de progreso
 const progressFill = document.getElementById('progress-fill');
 const progressLabel = document.getElementById('progress-label');
 
@@ -95,38 +88,43 @@ function formatTime(totalSeconds) {
 }
 
 function startProgressBar() {
-    let timeLeft = TOTAL_SECONDS; // 180
+    let timeLeft = TOTAL_SECONDS; 
     
-    // Aseguramos estado inicial
     progressFill.style.width = '100%';
     progressLabel.textContent = formatTime(timeLeft);
 
-    // Limpiamos cualquier intervalo previo por seguridad
     if (timerIntervalId) clearInterval(timerIntervalId);
 
     timerIntervalId = setInterval(() => {
         if (timeLeft > 0) {
             timeLeft--;
-            
-            // 1. Actualizar el texto (02:59, 02:58...)
+            if (timeLeft === 60) {
+                if (clockSound) {
+                    clockSound.volume = 1; 
+                    clockSound.play().catch(e => console.warn("Error audio reloj:", e));
+                }
+            }
+
             progressLabel.textContent = formatTime(timeLeft);
-            
-            // 2. Calcular y actualizar el ancho
             const percentage = (timeLeft / TOTAL_SECONDS) * 100;
             progressFill.style.width = percentage + '%';
 
-            // 3. Cambio de color dinámico (opcional)
             if (percentage < 30) {
                 progressFill.style.backgroundColor = 'rgba(255, 0, 0, 0.63)';
                 progressFill.style.filter = 'drop-shadow(0 0 10px rgba(255, 0, 0, 0.63))';
             }
         } else {
-            // FIN DEL TIEMPO
             clearInterval(timerIntervalId);
             progressLabel.textContent = "00:00";
             progressFill.style.width = '0%';
             
-            // Ejecutar derrota
+            // --- NUEVO: Parar el reloj si el tiempo se acaba ---
+            if (clockSound) {
+                clockSound.pause();
+                clockSound.currentTime = 0;
+            }
+            // --------------------------------------------------
+
             if (isTyping) {
                 endGame(false, "¡El tiempo se agotó!");
             }
@@ -147,7 +145,7 @@ function showBubble(message, duration = DIALOG_DURATION) {
     isCharacterClickable = true;
     yandereImage.style.cursor = 'pointer';
 
-    const isHelpDialog = (message === "SOLO NO QUERIA ESTAR SOLA...");
+    const isHelpDialog = (message === "ME SENTIA MUY SOLA...");
 
     if (comicBubble.timeoutId) {
         clearTimeout(comicBubble.timeoutId);
@@ -162,11 +160,9 @@ function showBubble(message, duration = DIALOG_DURATION) {
 }
 
 function startDialogLoop() {
-    // Primera ejecución
     showBubble(dialogs[currentDialogIndex], DIALOG_DURATION);
 
     setInterval(() => {
-        // Solo lanza diálogos si el juego está activo
         if (isTyping) {
             currentDialogIndex = (currentDialogIndex + 1) % dialogs.length;
             showBubble(dialogs[currentDialogIndex], DIALOG_DURATION);
@@ -235,12 +231,11 @@ function updateHealthDisplay() {
     healthDisplay.innerHTML = '❤️'.repeat(health) + '🤍'.repeat(3 - health);
 }
 
-// --- NUEVO: función para sonido de tecla ---
 function playKeySound() {
     if (!keySound) return;
 
     keySound.currentTime = 0;
-    keySound.volume = 0.6; // ajusta volumen a gusto
+    keySound.volume = 0.6; 
     keySound.play().catch(e => {
         console.warn("Fallo al reproducir sonido de tecla:", e);
     });
@@ -248,7 +243,7 @@ function playKeySound() {
 
 function playBackgroundMusic() {
     if (bgMusic) {
-        bgMusic.volume = 0.4; // Ajusta el volumen principal (0.0 a 1.0)
+        bgMusic.volume = 0.4;
         bgMusic.play().catch(error => {
             console.log("El navegador bloqueó el autoplay. Esperando interacción.");
         });
@@ -277,14 +272,13 @@ function spinChamber() {
         revolverChamber.style.transform = '';
 
         if (shotFired) {
-            // === CASO: DISPARO REAL (QUITA VIDA) ===
             if (gunshotSound) {
                 gunshotSound.currentTime = 0;
                 gunshotSound.play().catch(e => console.warn("Error en gunshot:", e));
             }
 
             health--;
-            chambersLoaded = 1; // Se reinicia la probabilidad
+            chambersLoaded = 1;
             updateHealthDisplay();
             
             if (health <= 0) {
@@ -292,11 +286,9 @@ function spinChamber() {
                 return;
             } 
 
-            // Pequeña pausa tras el susto antes de poder escribir
             setTimeout(() => { isTyping = true; }, 500);
         } 
         else {
-            // === CASO: CLIC SECO (NO HUBO DISPARO) ===
             if (emptyShotSound) {
                 emptyShotSound.currentTime = 0;
                 emptyShotSound.play().catch(e => console.warn("Error en emptyshot:", e));
@@ -358,7 +350,6 @@ function handleKeyInput(event) {
         return;
     }
 
-    // Sonido de tecla SOLO para caracteres "reales"
     playKeySound();
 
     currentSpan.classList.remove('current');

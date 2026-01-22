@@ -145,54 +145,52 @@ body.loaded {
 }
 
 .yandere-image {
-    width: 250px; 
-    height: auto; 
-    position: absolute; 
-    bottom: 120px; /* Distancia desde la parte inferior */
-    right: 180px; 
-    z-index: 100;
+  width: 250px; 
+  height: auto; 
+  position: absolute; 
+  bottom: 120px; 
+  right: 180px; 
+  z-index: 100;
 }
 
-/* Contenedor de la barra de progreso (sin cambios, solo se quitan comentarios) */
+/* Contenedor de la barra de progreso */
 .progress-bar-container {
-    position: absolute; 
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 400px; 
-    height: 30px; 
-    background-color: #333; 
-    border: 2px solid #fff;
-    border-radius: 15px; 
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-    overflow: hidden; 
-    z-index: 150;
+  position: absolute; 
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px; 
+  height: 30px; 
+  background-color: #333; 
+  border: 2px solid #fff;
+  border-radius: 15px; 
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  overflow: hidden; 
+  z-index: 150;
 }
 
 /* Relleno o Nivel de la Barra */
 .progress-fill {
-    height: 100%;
-    width: 100%; 
-    background-color: #c44;
-    transition: width 180s linear, background-color 180s linear; 
-    filter: drop-shadow(0 0 5px #ff0000); 
-    border-radius: 15px;
+  height: 100%;
+  width: 100%; 
+  background-color: #c44;
+  transition: width 180s linear, background-color 180s linear; 
+  filter: drop-shadow(0 0 5px #ff0000); 
+  border-radius: 15px;
 }
 
 /* Texto de porcentaje o etiqueta (sin cambios) */
 .progress-label {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    text-shadow: 0 0 3px #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 0 0 3px #000;
 }
 
-
-/* El contenido del juego irá por encima cuando se muestre */
 #game-content {
   position: relative;
   z-index: 2;
@@ -202,7 +200,7 @@ body.loaded {
     position: relative;
 }
 
-/* --- 2. ESTILO BASE DE LA BURBUJA --- */
+/* ESTILO BASE DE LA BURBUJA */
 .comic-bubble {
     position: absolute;
     
@@ -222,7 +220,6 @@ body.loaded {
     max-width: 300px; 
     z-index: 10;
     
-    /* Para controlar la visibilidad con JS  */
     opacity: 0;           
     pointer-events: none; 
     transition: opacity 0.5s ease-in-out;
@@ -234,65 +231,63 @@ body.loaded {
 }
 
 
-/* --- 3. CREACIÓN DEL PICO APUNTANDO A LA IZQUIERDA --- */
+/* CREACIÓN DEL PICO APUNTANDO A LA IZQUIERDA  */
 
 .comic-bubble::before {
-    content: '';
-    position: absolute;
-    top: 50%; 
-    left: -23px; 
-    bottom: auto; 
-    transform: translateY(-50%); 
-    width: 0;
-    height: 0;
-    border: 17px solid transparent; 
-    border-right-color: black; 
-    border-left: 0; 
-    z-index: 9; 
+  content: '';
+  position: absolute;
+  top: 50%; 
+  left: -23px; 
+  bottom: auto; 
+  transform: translateY(-50%); 
+  width: 0;
+  height: 0;
+  border: 17px solid transparent; 
+  border-right-color: black; 
+  border-left: 0; 
+  z-index: 9; 
 }
 
 .comic-bubble::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -20px; 
-    bottom: auto;
-    transform: translateY(-50%); 
-    width: 0;
-    height: 0;
-    border: 15px solid transparent; 
-    border-right-color: white; 
-    border-left: 0;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -20px; 
+  bottom: auto;
+  transform: translateY(-50%); 
+  width: 0;
+  height: 0;
+  border: 15px solid transparent; 
+  border-right-color: white; 
+  border-left: 0;
 }
 
 /* --- TEXT DISPLAY / PAPER AREA --- */
 #text-display {
-    position: absolute;
-    top: 15vh;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 800px;
-    min-height: 200px;
-    max-height: 350px;
-    padding: 30px;
-    
-    background-color: rgba(0, 0, 0, 0.4);
-    filter: blur(0.8px);
-    backdrop-filter: blur(1px);
-    color: #f1ebeb;
-    border-radius: 15px;
-    border: 2px solid #5a4a3a;
-
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.6;
-
-    cursor: default;
-    z-index: 10;
-    overflow-y: auto;
+  position: absolute;
+  top: 15vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  min-height: 200px;
+  max-height: 350px;
+  padding: 30px;
+  
+  background-color: rgba(0, 0, 0, 0.4);
+  filter: blur(0.8px);
+  backdrop-filter: blur(1px);
+  color: #f1ebeb;
+  border-radius: 15px;
+  border: 2px solid #5a4a3a;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.6;
+  cursor: default;
+  z-index: 10;
+  overflow-y: auto;
 }
 
-/* --- ESTILOS ESPECÍFICOS DE MECANOGRAFÍA --- */
+/* --- ESTILOS ESPECÍFICOS PARA LA MECANOGRAFÍA --- */
 .char.correct {
     color: #52ed52;
 }
@@ -307,7 +302,6 @@ body.loaded {
     border-radius: 4px;
 }
 
-/* Ocultar el input real */
 #hidden-input {
     opacity: 0;
     position: absolute;
@@ -316,47 +310,47 @@ body.loaded {
 
 /* --- BARRA DE PROGRESO DE 3 MINUTOS (Integrada) --- */
 .progress-bar-container {
-    position: absolute; 
-    top: 80px; /* Movido para evitar colisión con la top-bar */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 400px; 
-    height: 30px; 
-    background-color: #333; 
-    border: 2px solid #fff;
-    border-radius: 15px; 
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-    overflow: hidden; 
-    z-index: 150;
+  position: absolute; 
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px; 
+  height: 30px; 
+  background-color: #333; 
+  border: 2px solid #fff;
+  border-radius: 15px; 
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  overflow: hidden; 
+  z-index: 150;
 }
 
 .progress-fill {
-    height: 100%;
-    width: 100%; /* Inicia en 100% para vaciarse */
-    background-color: #c44; /* Rojo inicial */
-    transition: width 1s linear, background-color 0.5s ease;
-    filter: drop-shadow(0 0 5px #ff0000); 
-    border-radius: 15px;
+  height: 100%;
+  width: 100%; 
+  background-color: #c44; 
+  transition: width 1s linear, background-color 0.5s ease;
+  filter: drop-shadow(0 0 5px #ff0000); 
+  border-radius: 15px;
 }
 
 .progress-label {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    text-shadow: 0 0 3px #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 0 0 3px #000;
 }
 
-/* --- MODAL DE FIN DE JUEGO (Customizado) --- */
+/* --- MODAL DE FIN DE JUEGO  --- */
 .end-modal {
-    background-color: rgba(0, 0, 0, 0.9);
-    border: 3px solid #ff4d4d;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 25px #ff4d4d;
-    font-family: 'Creepster', cursive;
-    color: #fff;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 3px solid #ff4d4d;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px #ff4d4d;
+  font-family: 'Creepster', cursive;
+  color: #fff;
 }

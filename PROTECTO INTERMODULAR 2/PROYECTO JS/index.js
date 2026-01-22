@@ -1,4 +1,3 @@
-// Variable para almacenar el ID del temporizador y poder cancelarlo
 let rulesScreenTimerId = null; 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -13,24 +12,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Referencias Principales SPA ---
     const backgroundMusic = document.getElementById('musicaFondo');
     const audioControlButton = document.getElementById('audioControl');
-    
-    // Pantallas
     const startScreen = document.getElementById('startScreen');
     const rulesScreen = document.getElementById('rulesScreen');
-
-    // Botones
     const startButton = document.getElementById('startButton'); 
     const backButton = document.getElementById('backToStartButton');
-    const playGameButton = document.getElementById('playGameButton'); // Corregido ID
+    const playGameButton = document.getElementById('playGameButton');
 
     if (!backgroundMusic || !audioControlButton || !startButton || !rulesScreen || !startScreen) {
         return;
     }
 
-    // LÓGICA DE AUDIO (Inicia Silenciado)
+    // LÓGICA DE AUDIO 
     
     const updateIcon = () => {
         audioControlButton.textContent = backgroundMusic.muted ? '🔇' : '🔊';
@@ -56,14 +50,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // LÓGICA DE NAVEGACIÓN Y TEMPORIZADOR SPA
     
-    // Función para manejar la navegación a la pantalla del juego
     const goToGameScreen = () => {
         window.location.href = "/PROYECTO JS/game/game-screen.html";
     };
 
     // Función para iniciar la cuenta regresiva de 10 segundos
     const startRulesTimer = () => {
-        rulesScreenTimerId = setTimeout(goToGameScreen, 10000); 
+        rulesScreenTimerId = setTimeout(goToGameScreen, 30000); 
         console.log("Temporizador iniciado. Redirigiendo en 20 segundos.");
     };
 
@@ -78,40 +71,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     const navigateTo = (targetScreen) => {
-        // Ocultar ambas pantallas
         startScreen.style.display = 'none';
         rulesScreen.style.display = 'none';
-
-        // Mostrar la pantalla objetivo
         targetScreen.style.display = 'block';
 
-        // Lógica de Audio (solo para START y RULES)
+        // Lógica de Audio 
         if (targetScreen === rulesScreen) {
             if (backgroundMusic.muted) {
                 backgroundMusic.muted = false;
                 updateIcon(); 
             }
-            // INICIAR EL TEMPORIZADOR AL ENTRAR A LAS REGLAS
             startRulesTimer();
         } else {
-            // DETENER EL TEMPORIZADOR AL SALIR DE LAS REGLAS
             stopRulesTimer();
         }
     };
 
-    // 1. De Inicio a Reglas (START GAME)
     startButton.addEventListener('click', () => {
         navigateTo(rulesScreen);
     });
 
-    // 2. De Reglas a Inicio (VOLVER)
     if (backButton) {
         backButton.addEventListener('click', () => {
             navigateTo(startScreen);
         });
     }
 
-    // 3. De Reglas a Jugar (CLIC MANUAL)
     if (playGameButton) {
         playGameButton.addEventListener('click', () => {
             stopRulesTimer(); 

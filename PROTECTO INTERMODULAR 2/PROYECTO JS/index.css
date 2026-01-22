@@ -5,7 +5,6 @@ body {
     font-family: 'Josefin Slab', serif;
 }
 
-/* Contenedor general */
 .container {
     position: relative;
     width: 100%;
@@ -52,10 +51,9 @@ h1 {
     text-transform: uppercase;
 }
 
-/* Intro: vídeo a pantalla completa */
 #intro-video {
-    position: fixed; /* tapa toda la ventana */
-    inset: 0; /* top:0; right:0; bottom:0; left:0; */
+    position: fixed; 
+    inset: 0; 
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -65,10 +63,9 @@ h1 {
 #intro-video video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* que cubra toda la pantalla */
+    object-fit: cover; 
 }
 
-/* El contenido del juego irá por encima cuando se muestre */
 #game-content {
     position: relative;
     z-index: 2;
@@ -94,9 +91,6 @@ h1 {
     background: rgba(0, 0, 0, 0.8);
 }
 
-
-/* CLASES PARA SPA (Transición de Pantallas) */
-
 .screen {
     position: absolute;
     top: 0;
@@ -107,14 +101,12 @@ h1 {
 
 /* ESTILOS DE REGLAS */
 
-/* Fondo del contenedor de reglas  */
 #rulesScreen {
     background: url("/PROYECTO JS/assets/tvantigua.png") no-repeat center/cover;
     opacity: 1; 
     position: relative; 
 }
 
-/* Posiciona y dimensiona el área de contenido */
 #rulesScreen #tvContent {
     position: absolute;
     top: 45%;
@@ -144,12 +136,12 @@ h1 {
     color: #030303;
     text-shadow:
         0 0 20px #fff,
-        0 0 100px #ffea00;
+        0 0 100px #00eaff;
     animation: glowPulse 1s infinite ease-in-out;
 }
 
 #rulesScreen .start-center p {
-    color: rgb(0, 0, 0);
+    color: #030303;
     margin: 10px; 
     font-size: 2.5rem; 
     text-align: center;
@@ -159,21 +151,3 @@ h1 {
     animation: glowPulse 1s infinite ease-in-out;
     padding: 10px; 
 }
-
-/* @keyframes glowPulse {
-    0% {
-        text-shadow:
-            0 0 10px #fff,
-            0 0 100px #fff;
-    }
-    50% {
-        text-shadow:
-            0 0 5px #fff,
-            0 0 80px #fff;
-    }
-    100% {
-        text-shadow:
-            0 0 10px #fff,
-            0 0 100px #fff;
-    }
-} */
