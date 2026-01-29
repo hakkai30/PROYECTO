@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // LÓGICA DE NAVEGACIÓN Y TEMPORIZADOR SPA
     
     const goToGameScreen = () => {
-        window.location.href = "/game/game-screen.html";
+        window.location.href = "game/game-screen.html";
     };
 
     // Función para iniciar la cuenta regresiva de 10 segundos
