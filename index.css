@@ -1,7 +1,7 @@
 body {
     margin: 0;
     height: 100vh;
-    background: url("/PROYECTO JS/assets/inicio.webp") no-repeat center/cover;
+    background: url("/assets/inicio.webp") no-repeat center/cover;
     font-family: 'Josefin Slab', serif;
 }
 
@@ -102,7 +102,7 @@ h1 {
 /* ESTILOS DE REGLAS */
 
 #rulesScreen {
-    background: url("/PROYECTO JS/assets/tvantigua.png") no-repeat center/cover;
+    background: url("/assets/tvantigua.png") no-repeat center/cover;
     opacity: 1; 
     position: relative; 
 }

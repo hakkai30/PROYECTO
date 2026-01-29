@@ -181,7 +181,7 @@ yandereImage.addEventListener('click', () => {
             showBubble("Mnh-mu-muchas gracias...", 20000);
             
             setTimeout(() => {
-                window.location.href = "/PROYECTO JS/second-win/second-win-screen.html";
+                window.location.href = "/second-win/second-win-screen.html";
             }, 2000);
         } 
     }
@@ -403,9 +403,9 @@ function endGame(won, message) {
     if (bgMusic) bgMusic.pause();
 
     if (won) {
-        window.location.href = "/PROYECTO JS/win/win-screen.html";
+        window.location.href = "/win/win-screen.html";
     } else {
-        window.location.href = "/PROYECTO JS/death/death-screen.html";
+        window.location.href = "/death/death-screen.html";
     }
 }
 

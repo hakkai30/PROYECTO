@@ -3,32 +3,33 @@ body {
   padding: 0;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;         
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url('/PROYECTO JS/assets/end.gif') center center / cover no-repeat;
+  background: url('/assets/blood.gif') center center / cover no-repeat;
+  font-family: 'Josefin Slab', serif;
 }
 
-.winner-message {
+.lose-message {
   font-weight: bold;
   text-align: center;
   text-shadow:
     2px 2px 0 #222,
     0 0 8px #222,
-    0 0 36px #39D52A;
+    0 0 36px #B94A48;
   letter-spacing: 2px;
   line-height: 1.1;
 }
 
-.winner-message p {
-  color: #39D52A;
-  font-size: 9rem;
+.lose-message p {
+  color: #b87876;
+  font-size: 8rem;
   margin: 0;
 }
 
-.winner-message span {
-  color: #51a849;
-  font-size: 1.5rem;
+.lose-message span {
+  color: #B94A48;
+  font-size: 2.5rem;
   margin: 0;
 }
 
@@ -36,13 +37,17 @@ body {
   margin-top: 80px;
 }
 
-#retryWinButton {
-  color: #39D52A;
+#startButton {
+  color: #B94A48;
   text-shadow:
     2px 2px 0 #222,
     0 0 8px #222,
-    0 0 36px #39D52A;
+    0 0 36px #B94A48;
   cursor: pointer;
   text-decoration: none;
   font-size: 4rem;
 }
+
+
+ 
+  

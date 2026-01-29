@@ -3,10 +3,10 @@ body {
   padding: 0;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;       
+  flex-direction: column;         
   align-items: center;
   justify-content: center;
-  background: url('/PROYECTO JS/assets/end.gif') center center / cover no-repeat;
+  background: url('/assets/end.gif') center center / cover no-repeat;
 }
 
 .winner-message {
@@ -15,19 +15,19 @@ body {
   text-shadow:
     2px 2px 0 #222,
     0 0 8px #222,
-    0 0 36px #7dd52a;
+    0 0 36px #39D52A;
   letter-spacing: 2px;
   line-height: 1.1;
 }
 
 .winner-message p {
-  color: #c7d52abe;
+  color: #39D52A;
   font-size: 9rem;
   margin: 0;
 }
 
 .winner-message span {
-  color: #c7d52abe;
+  color: #51a849;
   font-size: 1.5rem;
   margin: 0;
 }
@@ -37,7 +37,7 @@ body {
 }
 
 #retryWinButton {
-  color: #c7d52abe;
+  color: #39D52A;
   text-shadow:
     2px 2px 0 #222,
     0 0 8px #222,
